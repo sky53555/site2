@@ -1,0 +1,90 @@
+{
+  "initial": [
+    {
+      "img": "images/food.jpg",
+      "alt": "food",
+      "location": "영국",
+      "description": "레지안 호텔"
+    },
+    {
+      "img": "images/japan2.jpg",
+      "alt": "japan",
+      "location": "일본",
+      "description": "후지산"
+    },
+    {
+      "img": "images/lake.jpg",
+      "alt": "lake",
+      "location": "중국",
+      "description": "장가계"
+    },
+    {
+      "img": "images/korea3.jpg",
+      "alt": "korea",
+      "location": "한국",
+      "description": "부산"
+    },
+    {
+      "img": "images/food2.jpg",
+      "alt": "food2",
+      "location": "발리",
+      "description": "선셋호텔"
+    },
+    {
+      "img": "images/lake2.jpg",
+      "alt": "lake2",
+      "location": "스위스",
+      "description": "깃텐호수"
+    },
+    {
+      "img": "images/hiking.jpg",
+      "alt": "hiking",
+      "location": "한국",
+      "description": "북한산"
+    }
+  ],
+  "more": [
+    {
+      "img": "images/korea.jpg",
+      "alt": "bridge",
+      "location": "한국",
+      "description": "부산"
+    },
+    {
+      "img": "images/food5.jpg",
+      "alt": "beach",
+      "location": "호주",
+      "description": "본다이 비치"
+    },
+    {
+      "img": "images/food3.jpg",
+      "alt": "mountain",
+      "location": "미국",
+      "description": "록키 산맥"
+    },
+    {
+      "img": "images/activity2.jpg",
+      "alt": "city",
+      "location": "프랑스",
+      "description": "파리"
+    },
+    {
+      "img": "images/land.jpg",
+      "alt": "forest",
+      "location": "독일",
+      "description": "바이에른 숲"
+    },
+    {
+      "img": "images/korea2.jpg",
+      "alt": "desert",
+      "location": "아랍에미리트",
+      "description": "두바이 사막"
+    },
+    {
+      "img": "images/japan.jpg",
+      "alt": "river",
+      "location": "브라질",
+      "description": "아마존 강"
+    }
+  ]
+}

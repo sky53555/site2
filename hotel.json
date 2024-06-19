@@ -1,0 +1,246 @@
+{
+  "new": [
+    {
+      "image": "./images/beach1.jpg",
+      "title": "[마이애미] 선셋 비치 리조트",
+      "description": "24년 6월 오픈, 여름 프로모션 중",
+      "price": "220,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/activity.jpg",
+      "title": "[방콕] 리버사이드 호텔",
+      "description": "24년 7월 오픈, 신규 오픈 기념 이벤트",
+      "price": "135,000원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/hotel.jpg",
+      "title": "[시드니] 하버 뷰 호텔",
+      "description": "24년 8월 오픈, 한정 할인 행사 중",
+      "price": "250,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/japan.jpg",
+      "title": "[도쿄] 시티 가든 인",
+      "description": "24년 9월 오픈, 무료 업그레이드 제공",
+      "price": "200,000원",
+      "rating": "3성급"
+    },
+    {
+      "image": "./images/rooftop-pool.jpg",
+      "title": "[파리] 샹젤리제 팰리스",
+      "description": "24년 10월 오픈, 무료 조식 제공",
+      "price": "280,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/type-entertainment.jpg",
+      "title": "[로마] 콜로세움 호텔",
+      "description": "24년 11월 오픈, 조식 무료 제공",
+      "price": "230,000원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/skyscrapers-sunset.jpg",
+      "title": "[런던] 타워 브릿지 호텔",
+      "description": "24년 12월 오픈, 무료 업그레이드 제공",
+      "price": "220,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/sydney.jpg",
+      "title": "[베를린] 베를린 센트럴 호텔",
+      "description": "24년 1월 오픈, 신규 오픈 기념 이벤트",
+      "price": "210,000원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/tour3.jpg",
+      "title": "[마드리드] 스페인 광장 호텔",
+      "description": "24년 2월 오픈, 여름 프로모션 중",
+      "price": "200,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/pool.jpg",
+      "title": "[뉴욕] 타임스퀘어 호텔",
+      "description": "24년 3월 오픈, 무료 업그레이드 제공",
+      "price": "250,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/lake.jpg",
+      "title": "[로스앤젤레스] 비버리 힐스 호텔",
+      "description": "24년 4월 오픈, 조식 무료 제공",
+      "price": "240,000원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/food5.jpg",
+      "title": "[샌프란시스코] 골든게이트 호텔",
+      "description": "24년 5월 오픈, 무료 업그레이드 제공",
+      "price": "230,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/glassclad-skyscrapers.jpg",
+      "title": "[시애틀] 스페이스 니들 호텔",
+      "description": "24년 6월 오픈, 여름 프로모션 중",
+      "price": "220,000원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/food.jpg",
+      "title": "[시카고] 윌리스 타워 호텔",
+      "description": "24년 7월 오픈, 신규 오픈 기념 이벤트",
+      "price": "210,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/luxury-bedroom-hotel.jpg",
+      "title": "[보스턴] 하버 호텔",
+      "description": "24년 8월 오픈, 한정 할인 행사 중",
+      "price": "200,000원",
+      "rating": "4성급"
+    }
+  ],
+  "sale": [
+    {
+      "image": "./images/luxury-bedroom-interior-with-rich-furniture-scenic-view-from-walkout-deck.jpg",
+      "title": "[방콕] 트로피칼 오아시스 호텔",
+      "description": "24년 7월 오픈, 한정 프로모션 중",
+      "originalPrice": "250,000원",
+      "discount": "35%",
+      "price": "162,500원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/mountain.jpg",
+      "title": "[시드니] 오션뷰 리트리트",
+      "description": "24년 8월 오픈, 오픈 기념 할인 중",
+      "originalPrice": "230,000원",
+      "discount": "25%",
+      "price": "172,500원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/korea3.jpg",
+      "title": "[파리] 샹젤리제 팰리스",
+      "description": "24년 9월 오픈, 무료 조식 제공",
+      "originalPrice": "280,000원",
+      "discount": "30%",
+      "price": "196,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/rooftop-pool.jpg",
+      "title": "[도쿄] 임페리얼 가든 호텔",
+      "description": "24년 10월 오픈, 웰컴 기프트 증정",
+      "originalPrice": "260,000원",
+      "discount": "20%",
+      "price": "208,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/pool.jpg",
+      "title": "[뉴욕] 맨해튼 스카이라인 호텔",
+      "description": "24년 11월 오픈, 한정 프로모션 중",
+      "originalPrice": "300,000원",
+      "discount": "40%",
+      "price": "180,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/fall.jpg",
+      "title": "[로스앤젤레스] 할리우드 힐스 호텔",
+      "description": "24년 12월 오픈, 오픈 기념 할인 중",
+      "originalPrice": "250,000원",
+      "discount": "35%",
+      "price": "162,500원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/japan.jpg",
+      "title": "[시카고] 윌리스 타워 호텔",
+      "description": "25년 1월 오픈, 무료 업그레이드 제공",
+      "originalPrice": "220,000원",
+      "discount": "20%",
+      "price": "176,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/japan2.jpg",
+      "title": "[샌프란시스코] 골든게이트 호텔",
+      "description": "25년 2월 오픈, 조식 무료 제공",
+      "originalPrice": "210,000원",
+      "discount": "25%",
+      "price": "157,500원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/land.jpg",
+      "title": "[보스턴] 하버 호텔",
+      "description": "25년 3월 오픈, 여름 프로모션 중",
+      "originalPrice": "200,000원",
+      "discount": "20%",
+      "price": "160,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/large-pool-with-hammocks.jpg",
+      "title": "[마이애미] 선셋 비치 리조트",
+      "description": "25년 4월 오픈, 무료 업그레이드 제공",
+      "originalPrice": "220,000원",
+      "discount": "30%",
+      "price": "154,000원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/ski.jpg",
+      "title": "[시애틀] 스페이스 니들 호텔",
+      "description": "25년 5월 오픈, 조식 무료 제공",
+      "originalPrice": "230,000원",
+      "discount": "25%",
+      "price": "172,500원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/light-garden-luxury-pool-nature.jpg",
+      "title": "[베를린] 베를린 센트럴 호텔",
+      "description": "25년 6월 오픈, 신규 오픈 기념 이벤트",
+      "originalPrice": "210,000원",
+      "discount": "20%",
+      "price": "168,000원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/food2.jpg",
+      "title": "[런던] 타워 브릿지 호텔",
+      "description": "25년 7월 오픈, 여름 프로모션 중",
+      "originalPrice": "240,000원",
+      "discount": "30%",
+      "price": "168,000원",
+      "rating": "5성급"
+    },
+    {
+      "image": "./images/lake2.jpg",
+      "title": "[로마] 콜로세움 호텔",
+      "description": "25년 8월 오픈, 한정 할인 행사 중",
+      "originalPrice": "250,000원",
+      "discount": "35%",
+      "price": "162,500원",
+      "rating": "4성급"
+    },
+    {
+      "image": "./images/lake.jpg",
+      "title": "[마드리드] 스페인 광장 호텔",
+      "description": "25년 9월 오픈, 무료 업그레이드 제공",
+      "originalPrice": "200,000원",
+      "discount": "20%",
+      "price": "160,000원",
+      "rating": "5성급"
+    }
+  ]
+}

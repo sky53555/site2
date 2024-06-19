@@ -1,0 +1,270 @@
+{
+  "swiper1": [
+    {
+      "image": "./images/beach2.jpg",
+      "title": "[프랑스] 해변 탐험",
+      "description": "2024.04.25~2024.04.30",
+      "price": "187,600원",
+      "type": "abroad"
+    },
+    {
+      "image": "./images/japan2.jpg",
+      "title": "[일본] 자연 감상",
+      "description": "2024.05.06~2024.05.10",
+      "price": "210,000원",
+      "type": "abroad"
+    },
+    {
+      "image": "./images/activity.jpg",
+      "title": "[이탈리아] 활동과 레저",
+      "description": "2024.05.26~2024.05.30",
+      "price": "220,000원",
+      "type": "abroad"
+    },
+    {
+      "image": "./images/lake.jpg",
+      "title": "[브라질] 액티비티 투어",
+      "description": "2024.06.21~2024.06.25",
+      "price": "240,000원",
+      "type": "abroad"
+    },
+    {
+      "image": "./images/land.jpg",
+      "title": "[러시아] 자유 여행",
+      "description": "2024.06.26~2024.06.30",
+      "price": "250,000원",
+      "type": "abroad"
+    },
+    {
+      "image": "./images/large-pool-with-hammocks.jpg",
+      "title": "[이란] 가족 여행",
+      "description": "2024.07.01~2024.07.05",
+      "price": "280,000원",
+      "type": "abroad"
+    },
+    {
+      "image": "./images/food2.jpg",
+      "title": "[인도네시아] 로맨틱 여행",
+      "description": "2024.07.06~2024.07.10",
+      "price": "270,000원",
+      "type": "abroad"
+    },
+    {
+      "image": "./images/luxury-blue-white-coast-tourism.jpg",
+      "title": "[제주] 자연 휴식",
+      "description": "2024.04.25~2024.04.30",
+      "price": "150,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/mountain.jpg",
+      "title": "[강원도] 산과 바다 여행",
+      "description": "2024.05.01~2024.05.05",
+      "price": "120,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/korea3.jpg",
+      "title": "[전라도] 문화 탐방",
+      "description": "2024.05.06~2024.05.10",
+      "price": "130,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/korea.jpg",
+      "title": "[경상도] 역사 체험",
+      "description": "2024.05.11~2024.05.15",
+      "price": "140,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/lake.jpg",
+      "title": "[제주] 비밀의 섬 탐험",
+      "description": "2024.05.16~2024.05.20",
+      "price": "160,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/night.jpg",
+      "title": "[서울] 도시 문화 감상",
+      "description": "2024.05.21~2024.05.25",
+      "price": "110,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/land.jpg",
+      "title": "[경기도] 농촌 힐링 여행",
+      "description": "2024.05.26~2024.05.30",
+      "price": "125,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/hiking.jpg",
+      "title": "[충청도] 자연 속 휴식",
+      "description": "2024.06.01~2024.06.05",
+      "price": "135,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/umbrella-chair-around-swimming-pool.jpg",
+      "title": "[전라도] 해안 풍경 감상",
+      "description": "2024.06.06~2024.06.10",
+      "price": "145,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/turkey.jpg",
+      "title": "[제주] 열기구 비행 체험",
+      "description": "2024.06.11~2024.06.15",
+      "price": "170,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/fall.jpg",
+      "title": "[강원도] 숲속 트레킹",
+      "description": "2024.06.16~2024.06.20",
+      "price": "180,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/korea3.jpg",
+      "title": "[서울] 도심 힐링",
+      "description": "2024.06.21~2024.06.25",
+      "price": "130,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/skyscrapers-sunset.jpg",
+      "title": "[경기도] 문화 체험",
+      "description": "2024.06.26~2024.06.30",
+      "price": "140,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/korea2.jpg",
+      "title": "[충청도] 전통 마을 탐방",
+      "description": "2024.07.01~2024.07.05",
+      "price": "150,000원",
+      "type": "domestic"
+    },
+    {
+      "image": "./images/relaxation-pool-umbrella-lounge-sky.jpg",
+      "title": "[전라도] 산 및 계곡 탐방",
+      "description": "2024.07.06~2024.07.10",
+      "price": "155,000원",
+      "type": "domestic"
+    }
+  ],
+  "swiper2": [
+    {
+      "image": "./images/food.jpg",
+      "title": "[이탈리아] 로마 힐링 여행",
+      "description": "#야시장 #케이블카 #레일바이크",
+      "price": "350,000원"
+    },
+    {
+      "image": "./images/activity2.jpg",
+      "title": "[스페인] 바르셀로나 레저 투어",
+      "description": "#해변 #수영 #야외카페",
+      "price": "280,000원"
+    },
+    {
+      "image": "./images/japan.jpg",
+      "title": "[일본] 도쿄 쇼핑 여행",
+      "description": "#명품 #전통시장 #현지음식",
+      "price": "310,000원"
+    },
+    {
+      "image": "./images/glassclad-skyscrapers.jpg",
+      "title": "[프랑스] 파리 문화 탐험",
+      "description": "#미술관 #역사적장소 #세계음식",
+      "price": "330,000원"
+    },
+    {
+      "image": "./images/ski.jpg",
+      "title": "[독일] 베를린 액티비티 투어",
+      "description": "#박물관 #공원 #헬스클럽",
+      "price": "290,000원"
+    },
+    {
+      "image": "./images/china.jpg",
+      "title": "[중국] 상하이 현지 맛집 탐방",
+      "description": "#중식 #해산물 #스트리트푸드",
+      "price": "270,000원"
+    },
+    {
+      "image": "./images/lake.jpg",
+      "title": "[러시아] 모스크바 역사 투어",
+      "description": "#거리음식 #레스토랑 #서점",
+      "price": "300,000원"
+    },
+    {
+      "image": "./images/lake2.jpg",
+      "title": "[이탈리아] 베니스 감성 여행",
+      "description": "#운하 #역사적장소 #레스토랑",
+      "price": "320,000원"
+    },
+    {
+      "image": "./images/luxury-bedroom-interior-with-rich-furniture-scenic-view-from-walkout-deck.jpg",
+      "title": "[캐나다] 밴쿠버 자연 탐험",
+      "description": "#산책로 #공원 #자전거",
+      "price": "340,000원"
+    },
+    {
+      "image": "./images/sydney.jpg",
+      "title": "[호주] 시드니 해변 휴양",
+      "description": "#서핑 #해양동물 #해변가카페",
+      "price": "360,000원"
+    },
+    {
+      "image": "./images/pool.jpg",
+      "title": "[미국] 샌프란시스코 문화 여행",
+      "description": "#미술 #음악 #편지",
+      "price": "380,000원"
+    },
+    {
+      "image": "./images/tour2.jpg",
+      "title": "[영국] 런던 역사 투어",
+      "description": "#교회 #성 #박물관",
+      "price": "400,000원"
+    },
+    {
+      "image": "./images/tour.jpg",
+      "title": "[브라질] 리오 디 자네이로 야생 동물 관찰",
+      "description": "#정글 #폭포 #동물원",
+      "price": "420,000원"
+    },
+    {
+      "image": "./images/tour3.jpg",
+      "title": "[태국] 방콕 시내 쇼핑 투어",
+      "description": "#시장 #테마파크 #마사지",
+      "price": "440,000원"
+    },
+    {
+      "image": "./images/rooftop-pool.jpg",
+      "title": "[필리핀] 보라카이 해변 휴양",
+      "description": "#수영 #스노클링 #해변가카페",
+      "price": "460,000원"
+    }
+  ],
+  "swiper3": [
+    {
+      "image": "./images/hotel1.jpg",
+      "title": "HOTEL: BlueWave Seoul",
+      "description": "서울의 중심지에서 편안한 휴식을 즐기세요. 다양한 시설과 서비스로 여행을 더욱 특별하게 만들어 드립니다.",
+      "buttonText": "바로 예약하기"
+    },
+    {
+      "image": "./images/glassclad-skyscrapers.jpg",
+      "title": "HOTEL: Golden Sky Seoul",
+      "description": "서울의 아름다운 하늘과 도심 풍경을 감상하며 특별한 시간을 보내세요. 최상의 휴식과 서비스를 제공합니다.",
+      "buttonText": "바로 예약하기"
+    },
+    {
+      "image": "./images/aerial-shot-aria-hotel-las-vegas.jpg",
+      "title": "HOTEL: Crystal Seoul",
+      "description": "시원한 서울의 공기와 아름다운 전망을 감상하며 편안한 휴식을 취하세요. 최상의 품질과 서비스로 여행을 즐겁게 만들어 드립니다.",
+      "buttonText": "바로 예약하기"
+    }
+  ]
+}

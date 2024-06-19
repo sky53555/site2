@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />  
+  <script src="js/jquery-3.7.1.min.js"></script>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script src="js/common.js"></script>
+    <title>tour package</title>
+  </head>
+  <body id="package-body">
+    <div id="packageWrap">
+      <!-- header -->
+      <header id="header">
+        <div class="headerWrap">
+          <h1>
+            <a href="index.html"><img src="images/logo-w.png" alt="로고" /></a>
+          </h1>
+          <nav class="innerNav">
+            <ul>
+              <li><a href="package.html">여행상품</a></li>
+              <li><a href="hotel.html">호텔</a></li>
+              <li><a href="event.html">이벤트</a></li>
+              <li><a href="customer.html">고객센터</a></li>
+            </ul>
+          </nav>
+          <button class="subBtn">
+            <a href="reserve.html">예약 및 조회</a>
+          </button>
+          <div class="hiddenNav">
+            <ul>
+              <li><a href="package.html">여행상품</a></li>
+              <li><a href="hotel.html">호텔</a></li>
+              <li><a href="event.html">이벤트</a></li>
+              <li><a href="customer.html">고객센터</a></li>
+            </ul>
+          </div>
+
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+      <section id="subPackage">
+        <h2>
+          훌쩍 떠나도<br />
+          부담적은 국내여행
+        </h2>
+        <div class="visualSearch">
+          <div class="visualinner">
+            <form>
+              <div class="destination">
+                <label for="destination">여행지</label>
+                <input
+                  type="text"
+                  id="destination"
+                  name="destination"
+                  placeholder="어디로 떠나시나요?"
+                />
+              </div>
+              <div class="checkin">
+                <label for="checkin">체크인</label>
+                <input
+                  type="date"
+                  id="checkin"
+                  name="checkin"
+                  placeholder="체크인"
+                />
+              </div>
+              <div class="checkout">
+                <label for="checkout">체크아웃</label>
+                <input
+                  type="date"
+                  id="checkout"
+                  name="checkout"
+                  placeholder="체크아웃"
+                />
+              </div>
+
+              <div class="number">
+                <label for="number">인원수</label>
+                <input
+                  type="number"
+                  id="number"
+                  name="number"
+                  placeholder="인원 수"
+                />
+              </div>
+
+              <div class="square">
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="package">
+        <div class="txtWrap">
+          <div class="mainTxt">
+            <h3>누구나 꿈꾸는 여행지</h3>
+            <h2>후기가 말해주는 진짜 여행</h2>
+          </div>
+          <div class="subTxt">
+            <p class="active" onclick="loadContent('domestic')">국내여행</p>
+            <p onclick="loadContent('abroad')">해외여행</p>
+          </div>
+        </div>
+        <div class="packageWrap">
+        <div class="swiper-container mySwiper1">
+          <ul class="packageCon swiper-wrapper">
+            <!-- <li>
+              <div class="packImg">
+                <img src="images/food5.jpg" alt="" class="img-cover" />
+              </div>
+              <div class="padding">
+                <h3>[다낭] 휴양 패키지</h3>
+                <p>2024.4.25~</p>
+                <h2>187,600원~</h2>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+          <div class="buttons">
+            <button class="prevBtn"><ion-icon name="chevron-back-sharp"></ion-icon></button>
+            <button class="nextBtn"><ion-icon name="chevron-forward-sharp"></ion-icon></button>
+          </buttons>
+        </div>
+        </div>
+      </section>
+      <section id="special">
+        <div class="mainTxt">
+          <h2>특가를 잡아라!</h2>
+        </div>
+        <div class="specialWrap swiper-container mySwiper2">
+          <ul class="specialCon swiper-wrapper">
+            <!-- <li>
+              <div class="specialImg">
+                <img src="images/food4.jpg" alt="" class="img-cover" />
+              </div>
+              <div class="specialText">
+                <h3>[요즘대세] 나트랑 2박 3일</h3>
+                <p>#야시장 #케이블카 #레일바이크</p>
+                <h2>299,900원~</h2>
+              </div>
+            </li> -->
+
+            
+          </ul>
+        </div>
+      </section>
+
+      <!-- <section id="adver">
+        <div class="swiper-wrapper mySwiper3">
+          <div class="adverText swiper-wrapper">
+          <div
+            class="swiper-slide slide-1"
+            data-title="HOTEl: ANTEROOM SEOUL"
+            data-subtitle="남산과 한강의 탁 트인 서울 뷰와 함께 낮에는 책과 커피, 저녁에는
+            칵테일과 와인을 즐길 수 있는 가로수길에 위치한 안테룸 호텔"
+            data-subcon="바로 예약하기"
+          ></div>
+          <div
+            class="swiper-slide slide-2"
+            data-title="HOTEl: ANTEROOM SEOUL"
+            data-subtitle="남산과 한강의 탁 트인 서울 뷰와 함께 낮에는 책과 커피, 저녁에는
+            칵테일과 와인을 즐길 수 있는 가로수길에 위치한 안테룸 호텔"
+            data-subcon="바로 예약하기"
+          ></div>
+          <div
+          class="swiper-slide slide-3"
+          data-title="HOTEl: ANTEROOM SEOUL"
+          data-subtitle="남산과 한강의 탁 트인 서울 뷰와 함께 낮에는 책과 커피, 저녁에는
+          칵테일과 와인을 즐길 수 있는 가로수길에 위치한 안테룸 호텔"
+          data-subcon="바로 예약하기"
+        ></div>
+        </div>
+
+         <div class="slide-captions"></div>
+
+
+        <div class="slider__pagination" ></div>
+        </div>
+      </section> -->
+
+      <section id="discount">
+          <div class="discountWrap pTopBot">
+            <div class="mainTxt">
+            <h2>4월 특가 할인 진행중</h2>
+            </div>
+            <div class="discountCon">
+              <ul>
+                <li>
+                  <img src="./images/air.png" alt="" class="ani1" />
+                  <img src="./images/travel.png" alt="" />
+                  <div class="discounText">
+                    <h3>최대 50% 할인</h3>
+                    <p>
+                      동남아에서<br />
+                      즐기는 호캉스
+                    </p>
+                    <p class="date">2024.08~2024.09</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./images/bullun.png" alt="" class="ani2" />
+                  <img src="./images/pool.png" alt="" />
+                  <div class="discounText">
+                    <h3>최대 30% 할인</h3>
+                    <p>
+                      내가 원하는 곳 어디든<br />
+                      찾아가는 서비스
+                    </p>
+                    <p class="date">2024.09~2024.10</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      <section id="theme">
+        <div class="mainTxt">
+          <h2>TRAVEL PLUS 걱정없는 여행</h2>
+        </div>
+
+        <div class="themeWrap">
+          <ul class="themeCon">
+            <li class="active">
+                <p class="verti">TRAVEL PLUS</p>
+                <div class="themeText">
+                  <h2>[남미]</h2>
+                  <p>자연과 어드벤처의 땅!</p>
+              </div>
+            </li>
+            <li>
+                <p class="verti">TRAVEL PLUS</p>
+                <div class="themeText">
+                  <h2>[유럽]</h2>
+                  <p>문화와 역사가 살아 숨 쉬는 곳!</p>
+              </div>
+            </li>
+            <li>
+                <p class="verti">TRAVEL PLUS</p>
+                <div class="themeText">
+                  <h2>[북미]</h2>
+                  <p>다양성과 혁신의 중심지!</p>
+              </div>
+            </li>
+            <li>
+                <p class="verti">TRAVEL PLUS</p>
+                <div class="themeText">
+                  <h2>[아프리카]</h2>
+                  <p>야생 동물과 원시 자연을 경험하세요!</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <div class="footer_wrap">
+          <div class="footer_top">
+            <div class="fotoText">
+              <p class="number">고객센터 <span>02-412-1212</span></p>
+              <div class="links">
+                <span>질문과 답변</span>
+                <span>자주 묻는 질문</span>
+                <span>공지사항</span>
+                <span>현금영수증 안내</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer_down">
+            <div class="links">
+              <span>회사소개</span>
+              <span>여행약관</span>
+              <span>서비스이용약관</span>
+              <span>개인정보 처리방침</span>
+              <span>찾아오시는길</span>
+            </div>
+            <div class="fotoText">
+              <div class="info">
+                <address>서울본사 : 서울시 용신구 한공대로 313</address>
+                <p>
+                  대표이사 : 김여행 사업자등록번호 : 502001<br />
+                  통신판매업신고번호 : 제000 서울용신<br />
+                  여행자 배상책임보험 20억 가입
+                </p>
+              </div>
+              <p>Copyright All rights reserved.</p>
+            </div>
+          </div>
+          <div class="social">
+            <div class="imgs">
+              <div class="img">
+                <img src="./images/facebook.png" alt="" />
+              </div>
+              <div class="img">
+                <img src="./images/instagram.png" alt="" />
+              </div>
+              <div class="img">
+                <img src="./images/youtube.png" alt="" />
+              </div>
+            </div>
+            <img src="./images/logo-b.png" alt="" />
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function() {
+
+        
+        $(".themeCon li").click(function() {
+          $(".themeCon li").removeClass("active");
+          $(this).addClass("active");
+        });
+
+
+          // 페이지 로드 시 기본적으로 국내여행 내용 로드
+          loadContent('domestic');
+      
+          // 국내여행과 해외여행 탭에 클릭 이벤트 핸들러 추가
+          $('.subTxt p').click(function() {
+              var category = $(this).attr('onclick').split("'")[1];
+              loadContent(category);
+              
+              // 모든 p 태그에서 active 클래스 제거 후 클릭된 태그에만 active 클래스 추가
+              $('.subTxt p').removeClass('active');
+              $(this).addClass('active');
+          });
+      
+          // Swiper 인스턴스 초기화
+          var swiper1 = new Swiper('.mySwiper1', {
+              spaceBetween: 30,
+              loop: true,
+              navigation: {
+                  nextEl: '.packageWrap .nextBtn',
+                  prevEl: '.packageWrap .prevBtn',
+              },
+              slidesPerView: 1,
+              breakpoints: {
+                  900: {
+                      slidesPerView: 2,
+                  },
+                  1500: {
+                      slidesPerView: 3,
+                  },
+                  1600: {
+                      slidesPerView: 4,
+                  },
+              },
+          });
+          window.mySwiper1 = swiper1; // 전역 변수로 Swiper 저장
+ 
+      
+      function loadContent(category) {
+          $.getJSON("package.json", function(data) {
+              const filteredContent = data.swiper1.filter(item => item.type === category);
+              const swiperWrapper = $(".mySwiper1 .swiper-wrapper");
+              swiperWrapper.empty();
+      
+              filteredContent.forEach(function(item) {
+                  const html = `
+                  <li class="swiper-slide">
+                      <div class="packImg">
+                          <img src="${item.image}" alt="" class="img-cover" />
+                      </div>
+                      <div class="padding">
+                          <h3>${item.title}</h3>
+                          <p>${item.description}</p>
+                          <h2>${item.price}~</h2>
+                      </div>
+                  </li>`;
+                  swiperWrapper.append(html);
+              });
+      
+              // Swiper 내용이 갱신되었으므로 Swiper를 업데이트
+              if (window.mySwiper1) {
+                  window.mySwiper1.update();
+              }
+          });
+
+        }
+
+        $.getJSON("package.json", function(data) {
+          const content = data.swiper2;
+          const swiperWrapper = $(".mySwiper2 .swiper-wrapper");
+          swiperWrapper.empty();
+
+          content.forEach(function(slide) {
+            const slideHtml = `
+          <li class="swiper-slide">
+            <div class="specialImg">
+              <img src="${slide.image}" alt="" class="img-cover" />
+            </div>
+            <div class="specialText">
+              <h3>${slide.title}</h3>
+              <p>${slide.description}</p>
+              <h2>${slide.price}~</h2>
+            </div>
+          </li>
+        `;
+        swiperWrapper.append(slideHtml);
+      });
+
+      var swiper2 = new Swiper('.mySwiper2', {
+              spaceBetween: 70,
+              loop: true,
+              slidesPerView: 1,
+              breakpoints: {
+              
+                  1200: {
+                      slidesPerView: 3,
+                  },
+                  1600: {
+                      slidesPerView: 4,
+                  },
+              },
+          });
+     
+      });
+
+
+      });//the end
+ 
+      </script>
+      
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

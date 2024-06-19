@@ -1,0 +1,190 @@
+{
+  "nature": [
+    {
+      "image": "images/mountain.jpg",
+      "title": "[자연] 제주도 올레길",
+      "price": "1,200,000원~"
+    },
+    {
+      "image": "images/ski.jpg",
+      "title": "[자연] 스위스 알프스",
+      "price": "1,300,000원~"
+    },
+    {
+      "image": "images/fall.jpg",
+      "title": "[자연] 설악산 트레킹",
+      "price": "1,100,000원~"
+    },
+    {
+      "image": "images/type-entertainment.jpg",
+      "title": "[자연] 강원도 숲속 캠핑",
+      "price": "1,150,000원~"
+    },
+    {
+      "image": "images/turkey.jpg",
+      "title": "[자연] 캐나다 로키산맥",
+      "price": "1,400,000원~"
+    },
+    {
+      "image": "images/tour.jpg",
+      "title": "[자연] 뉴질랜드 피오르드",
+      "price": "1,250,000원~"
+    },
+    {
+      "image": "images/lake.jpg",
+      "title": "[자연] 지리산 둘레길",
+      "price": "1,180,000원~"
+    },
+    {
+      "image": "images/japan2.jpg",
+      "title": "[자연] 호주 블루마운틴",
+      "price": "1,300,000원~"
+    },
+    {
+      "image": "images/asia.jpg",
+      "title": "[자연] 하와이 화산 국립공원",
+      "price": "1,350,000원~"
+    }
+  ],
+  "family": [
+    {
+      "image": "images/korea3.jpg",
+      "title": "[가족] 부산 해운대",
+      "price": "1,200,000원~"
+    },
+    {
+      "image": "images/korea2.jpg",
+      "title": "[가족] 서울 랜드마크 투어",
+      "price": "1,100,000원~"
+    },
+    {
+      "image": "images/korea.jpg",
+      "title": "[가족] 전주 한옥마을",
+      "price": "1,300,000원~"
+    },
+    {
+      "image": "images/hiking.jpg",
+      "title": "[가족] 경주 문화유산",
+      "price": "1,150,000원~"
+    },
+    {
+      "image": "images/food3.jpg",
+      "title": "[가족] 제주도 가족여행",
+      "price": "1,400,000원~"
+    },
+    {
+      "image": "images/glassclad-skyscrapers.jpg",
+      "title": "[가족] 강원도 리조트",
+      "price": "1,250,000원~"
+    },
+    {
+      "image": "images/umbrella-chair-around-swimming-pool.jpg",
+      "title": "[가족] 여수 바다여행",
+      "price": "1,180,000원~"
+    },
+    {
+      "image": "images/relaxation-pool.jpg",
+      "title": "[가족] 속초 해변",
+      "price": "1,300,000원~"
+    },
+    {
+      "image": "images/activity2.jpg",
+      "title": "[가족] 남이섬",
+      "price": "1,350,000원~"
+    }
+  ],
+  "friends": [
+    {
+      "image": "images/food2.jpg",
+      "title": "[친구] 서울 홍대",
+      "price": "1,200,000원~"
+    },
+    {
+      "image": "images/china.jpg",
+      "title": "[친구] 부산 광안리",
+      "price": "1,100,000원~"
+    },
+    {
+      "image": "images/skyscrapers-sunset.jpg",
+      "title": "[친구] 대구 동성로",
+      "price": "1,300,000원~"
+    },
+    {
+      "image": "images/mountain.jpg",
+      "title": "[친구] 광주 충장로",
+      "price": "1,150,000원~"
+    },
+    {
+      "image": "images/luxury-bedroom-hotel.jpg",
+      "title": "[친구] 제주도 동문시장",
+      "price": "1,400,000원~"
+    },
+    {
+      "image": "images/relaxation-pool.jpg",
+      "title": "[친구] 인천 차이나타운",
+      "price": "1,250,000원~"
+    },
+    {
+      "image": "images/korea3.jpg",
+      "title": "[친구] 전주 남부시장",
+      "price": "1,180,000원~"
+    },
+    {
+      "image": "images/umbrella-chair-around-swimming-pool.jpg",
+      "title": "[친구] 대전 중앙로",
+      "price": "1,300,000원~"
+    },
+    {
+      "image": "images/type-entertainment.jpg",
+      "title": "[친구] 울산 태화강",
+      "price": "1,350,000원~"
+    }
+  ],
+  "adventure": [
+    {
+      "image": "images/activity2.jpg",
+      "title": "[모험] 네팔 히말라야",
+      "price": "1,200,000원~"
+    },
+    {
+      "image": "images/yoga.jpg",
+      "title": "[모험] 남미 아마존",
+      "price": "1,100,000원~"
+    },
+    {
+      "image": "images/ski.jpg",
+      "title": "[모험] 알래스카 탐험",
+      "price": "1,300,000원~"
+    },
+    {
+      "image": "images/lake2.jpg",
+      "title": "[모험] 아프리카 사파리",
+      "price": "1,150,000원~"
+    },
+    {
+      "image": "images/mountain.jpg",
+      "title": "[모험] 호주 아웃백",
+      "price": "1,400,000원~"
+    },
+    {
+      "image": "images/lake.jpg",
+      "title": "[모험] 아이슬란드 빙하",
+      "price": "1,250,000원~"
+    },
+    {
+      "image": "images/sydney.jpg",
+      "title": "[모험] 뉴질랜드 번지점프",
+      "price": "1,180,000원~"
+    },
+    {
+      "image": "images/tour.jpg",
+      "title": "[모험] 캐나다 카약",
+      "price": "1,300,000원~"
+    },
+    {
+      "image": "images/turkey.jpg",
+      "title": "[모험] 칠레 파타고니아",
+      "price": "1,350,000원~"
+    }
+  ]
+}

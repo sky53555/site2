@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
+  </head>
+  <body id="reser-body">
+    <div id="reserWrap">
+      <!-- header -->
+      <header id="header">
+        <div class="headerWrap">
+          <h1>
+            <a href="index.html"><img src="images/logo-w.png" alt="로고" /></a>
+          </h1>
+          <nav class="innerNav">
+            <ul>
+              <li><a href="package.html">여행상품</a></li>
+              <li><a href="hotel.html">호텔</a></li>
+              <li><a href="event.html">이벤트</a></li>
+              <li><a href="customer.html">고객센터</a></li>
+            </ul>
+          </nav>
+          <button class="subBtn">
+            <a href="reserve.html">예약 및 조회</a>
+          </button>
+          <div class="hiddenNav">
+            <ul>
+              <li><a href="package.html">여행상품</a></li>
+              <li><a href="hotel.html">호텔</a></li>
+              <li><a href="event.html">이벤트</a></li>
+              <li><a href="customer.html">고객센터</a></li>
+            </ul>
+          </div>
+
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+      <div class="mainTxt">
+        <h2>로그인</h2>
+      </div>
+
+      <div id="allMem">
+        <div class="allHead">
+          <h2 class="active">회원 로그인</h2>
+          <h2 id="nonMem">비회원 예약조회</h2>
+        </div>
+
+        <section id="allSub">
+          <div class="login">
+            <p>SNS 로그인</p>
+            <div class="socialIcon">
+              <img src="./images/a_ka.png" alt="" />
+              <img src="./images/a_n.png" alt="" />
+              <img src="./images/a_f.png" alt="" />
+              <img src="./images/a_a.png" alt="" />
+            </div>
+
+            <form>
+              <input type="text" placeholder="아이디" />
+              <input type="password" placeholder="비밀번호" />
+              <div class="idCheck">
+                <input type="checkbox" id="loginCheck" />
+                <label for="loginCheck">아이디 저장</label>
+              </div>
+              <button class="loginBtn">로그인</button>
+              <div class="loginCheck">
+                <input type="checkbox" id="remain" />
+                <label for="remain">로그인 상태 유지</label>
+              </div>
+            </form>
+
+            <ul class="loginTxt">
+              <li>아이디 찾기</li>
+              <li>비밀번호 찾기</li>
+              <li>회원가입</li>
+            </ul>
+          </div>
+          <div class="nonLogin">
+            <form>
+              <input type="text" placeholder="예약번호" />
+              <input type="text" placeholder="핸드폰 번호" />
+              <button class="loginBtn">조회하기</button>
+            </form>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="footer_wrap">
+          <div class="footer_top">
+            <div class="fotoText">
+              <p class="number">고객센터 <span>02-412-1212</span></p>
+              <div class="links">
+                <span>질문과 답변</span>
+                <span>자주 묻는 질문</span>
+                <span>공지사항</span>
+                <span>현금영수증 안내</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer_down">
+            <div class="links">
+              <span>회사소개</span>
+              <span>여행약관</span>
+              <span>서비스이용약관</span>
+              <span>개인정보 처리방침</span>
+              <span>찾아오시는길</span>
+            </div>
+            <div class="fotoText">
+              <div class="info">
+                <address>서울본사 : 서울시 용신구 한공대로 313</address>
+                <p>
+                  대표이사 : 김여행 사업자등록번호 : 502001<br />
+                  통신판매업신고번호 : 제000 서울용신<br />
+                  여행자 배상책임보험 20억 가입
+                </p>
+              </div>
+              <p>Copyright All rights reserved.</p>
+            </div>
+          </div>
+          <div class="social">
+            <div class="imgs">
+              <div class="img">
+                <img src="./images/facebook.png" alt="" />
+              </div>
+              <div class="img">
+                <img src="./images/instagram.png" alt="" />
+              </div>
+              <div class="img">
+                <img src="./images/youtube.png" alt="" />
+              </div>
+            </div>
+            <img src="./images/logo-b.png" alt="" />
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      let btns = document.querySelectorAll(".allHead h2");
+      let nonLogin = document.querySelector(".nonLogin");
+      let login = document.querySelector(".login");
+      btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btns.forEach((item) => {
+            if (item === btn) {
+              // 현재 클릭된 버튼
+              item.classList.add("active");
+              item.style.borderBottom = "none"; // 선택된 버튼의 바텀 제거
+            } else {
+              // 선택되지 않은 버튼
+              item.classList.remove("active");
+              item.style.borderBottom = "1px solid black"; // 바텀 추가
+            }
+          });
+
+          if (btn.id == "nonMem") {
+            // 비회원 예약조회일때
+            nonLogin.style.display = "block";
+            login.style.display = "none";
+          } else {
+            // 회원 로그인일때
+            nonLogin.style.display = "none";
+            login.style.display = "block";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

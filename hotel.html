@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOTEL</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="js/common.js"></script>
+  </head>
+  <body class="hotel-body">
+    <div id="hotelWrap">
+      <!-- header -->
+      <header id="header">
+        <div class="headerWrap">
+          <h1>
+            <a href="index.html"><img src="images/logo-w.png" alt="로고" /></a>
+          </h1>
+          <nav class="innerNav">
+            <ul>
+              <li><a href="package.html">여행상품</a></li>
+              <li><a href="hotel.html">호텔</a></li>
+              <li><a href="event.html">이벤트</a></li>
+              <li><a href="customer.html">고객센터</a></li>
+            </ul>
+          </nav>
+          <button class="subBtn">
+            <a href="reserve.html">예약 및 조회</a>
+          </button>
+          <div class="hiddenNav">
+            <ul>
+              <li><a href="package.html">여행상품</a></li>
+              <li><a href="hotel.html">호텔</a></li>
+              <li><a href="event.html">이벤트</a></li>
+              <li><a href="customer.html">고객센터</a></li>
+            </ul>
+          </div>
+
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </div>
+      </header>
+      <!-- header -->
+      <section id="subHotel">
+        <h2>
+          여기서<br />
+          호캉스 하고 가실게요-
+        </h2>
+        <div class="visualSearch">
+          <div class="visualinner">
+            <form>
+              <div class="destination">
+                <label for="destination">여행지</label>
+                <input
+                  type="text"
+                  id="destination"
+                  name="destination"
+                  placeholder="어디로 떠나시나요?"
+                />
+              </div>
+              <div class="checkin">
+                <label for="checkin">체크인</label>
+                <input
+                  type="date"
+                  id="checkin"
+                  name="checkin"
+                  placeholder="체크인"
+                />
+              </div>
+              <div class="checkout">
+                <label for="checkout">체크아웃</label>
+                <input
+                  type="date"
+                  id="checkout"
+                  name="checkout"
+                  placeholder="체크아웃"
+                />
+              </div>
+
+              <div class="number">
+                <label for="number">인원수</label>
+                <input
+                  type="number"
+                  id="number"
+                  name="number"
+                  placeholder="인원 수"
+                />
+              </div>
+
+              <div class="square">
+                <ion-icon name="search-outline"></ion-icon>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section id="intro">
+          <div class="mainTxt">
+            <h2>Travel with 함께라면!</h2>
+          </div>
+          <ul>
+            <li>
+              <p class="img"><img src="./images/1.png" alt="" /></p>
+              <p class="text">할인쿠폰</p>
+            </li>
+            <li>
+              <p class="img"><img src="./images/2.png" alt="" /></p>
+              <p class="text">특가 모음</p>
+            </li>
+            <li>
+              <p class="img"><img src="./images/3.png" alt="" /></p>
+              <p class="text">BEST 여행상품</p>
+            </li>
+            <li>
+              <p class="img"><img src="./images/4.png" alt="" /></p>
+              <p class="text">땡처리 모음</p>
+            </li>
+          </ul>
+        </section>
+        <section id="hotel">
+          <div class="commonWrap">
+            <div class="commonTxt">
+              <h2><span>NEW!</span> 새로 오픈한 호텔</h2>
+              <div class="commonBtn">
+                <button class="left">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="right">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="commonCon swiper1">
+              <ul class="swiper-wrapper">
+                <!-- <li>
+                  <div class="commonImg">
+                    <img src="images/food5.jpg" alt="" class="img-cover" />
+                  </div>
+                  <p>5성급</p>
+                  <h4>[마이애미] 선셋 비치 리조트</h4>
+                  <p>24년 6월 오픈, 여름 프로모션 중</p>
+                  <p class="price">220,000원~</p>
+                </li>
+                <li> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="sale">
+          <div class="commonWrap pTopBot">
+            <div class="commonTxt">
+              <h2>다신 없을 파격 <span>SALE!</span></h2>
+              <div class="commonBtn">
+                <button class="left">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <button class="right">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="commonCon swiper2">
+              <ul class="swiper-wrapper">
+                <!-- <li>
+                  <div class="commonImg">
+                    <img src="images/hotel.jpg" alt="" class="img-cover" />
+                  </div>
+                  <p>5성급</p>
+                  <h4>[방콕] 트로피칼 오아시스 호텔</h4>
+                  <p>24년 7월 오픈, 한정 프로모션 중</p>
+                  <p class="oriprice">250,000원</p>
+                  <div class="conText">
+                    <span class="percent">35%</span>
+                    <span class="price">162,500원~</span>
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- <section id="discount">
+          <div class="discountWrap pTopBot">
+            <h2>4월 특가 할인 진행중</h2>
+            <div class="discountCon">
+              <ul>
+                <li>
+                  <img src="./images/air.png" alt="" class="ani1" />
+                  <img src="./images/travel.png" alt="" />
+                  <div class="discounText">
+                    <h3>최대 50% 할인</h3>
+                    <p>
+                      동남아에서<br />
+                      즐기는 호캉스
+                    </p>
+                    <p class="date">2024.08~2024.09</p>
+                  </div>
+                </li>
+                <li>
+                  <img src="./images/bullun.png" alt="" class="ani2" />
+                  <img src="./images/pool.png" alt="" />
+                  <div class="discounText">
+                    <h3>최대 30% 할인</h3>
+                    <p>
+                      내가 원하는 곳 어디든<br />
+                      찾아가는 서비스
+                    </p>
+                    <p class="date">2024.09~2024.10</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section> -->
+        <section id="adver">
+          <div class="swiper-wrapper mySwiper3">
+            <div class="adverText swiper-wrapper">
+              <div
+                class="swiper-slide slide-1"
+                data-title="HOTEl:  CORAL TOWER BUSAN"
+                data-subtitle="부산의 해운대 해변에 위치해 도시와 바다가 어우러진 멋진 경관"
+                data-subcon="바로 예약하기"
+              ></div>
+              <div
+                class="swiper-slide slide-2"
+                data-title="HOTEL: OLD TOWN JEJU"
+                data-subtitle="제주의 돌담길을 따라 산책하며 제주의 고즈넉한 분위기를 경험할 수 있는 호텔"
+                data-subcon="바로 예약하기"
+              ></div>
+              <div
+                class="swiper-slide slide-3"
+                data-title="HOTEl: RIVERSIDE GANGNAM"
+                data-subtitle="비즈니스와 여가를 위한 완벽한 선택지로, 고급 스파와 피트니스 센터."
+                data-subcon="바로 예약하기"
+              ></div>
+            </div>
+            <!-- Slide captions -->
+            <div class="slide-captions"></div>
+
+            <!-- If we need pagination -->
+            <div class="slider__pagination"></div>
+          </div>
+
+          <!-- <div class="adverText">
+            <h2>HOTEl: ANTEROOM SEOUL</h2>
+            <p>
+              남산과 한강의 탁 트인 서울 뷰와 함께 낮에는 책과 커피, 저녁에는
+              칵테일과 와인을 즐길 수 있는 가로수길에 위치한 안테룸 호텔
+            </p>
+            <button>바로 예약하기</button>
+          </div>
+          <div class="dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+          </div> -->
+        </section>
+        <section id="clickBest">
+          <div class="clickWrap pTopBot">
+            <h2>조회수 급상승</h2>
+            <div class="clickCon">
+              <ul>
+                <li class="big"><p>[태국] 방콕 휴양하러 GO!</p></li>
+                <li><p>[베트남] 낭만 가득 호캉스</p></li>
+                <li><p>[프랑스] 파리의 미식을 찾아</p></li>
+                <li><p>[스페인] 자연과 함께 힐링</p></li>
+                <li><p>[이탈리아] 나만 알고 싶은 곳</p></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer_wrap">
+          <div class="footer_top">
+            <div class="fotoText">
+              <p class="number">고객센터 <span>02-412-1212</span></p>
+              <div class="links">
+                <span>질문과 답변</span>
+                <span>자주 묻는 질문</span>
+                <span>공지사항</span>
+                <span>현금영수증 안내</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer_down">
+            <div class="links">
+              <span>회사소개</span>
+              <span>여행약관</span>
+              <span>서비스이용약관</span>
+              <span>개인정보 처리방침</span>
+              <span>찾아오시는길</span>
+            </div>
+            <div class="fotoText">
+              <div class="info">
+                <address>서울본사 : 서울시 용신구 한공대로 313</address>
+                <p>
+                  대표이사 : 김여행 사업자등록번호 : 502001<br />
+                  통신판매업신고번호 : 제000 서울용신<br />
+                  여행자 배상책임보험 20억 가입
+                </p>
+              </div>
+              <p>Copyright All rights reserved.</p>
+            </div>
+          </div>
+          <div class="social">
+            <div class="imgs">
+              <div class="img">
+                <img src="./images/facebook.png" alt="" />
+              </div>
+              <div class="img">
+                <img src="./images/instagram.png" alt="" />
+              </div>
+              <div class="img">
+                <img src="./images/youtube.png" alt="" />
+              </div>
+            </div>
+            <img src="./images/logo-b.png" alt="" />
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function () {
+        //new
+        $.getJSON("hotel.json", function (data) {
+          if (data && data.new && data.new.length > 0) {
+            var items = [];
+            $.each(data.new, function (key, val) {
+              items.push(
+                '<li class="swiper-slide">' +
+                  '<div class="commonImg">' +
+                  '<img src="' +
+                  val.image +
+                  '" alt="" class="img-cover" />' +
+                  "</div>" +
+                  "<p>" +
+                  val.rating +
+                  "</p>" +
+                  "<h4>" +
+                  val.title +
+                  "</h4>" +
+                  val.description +
+                  "</p>" +
+                  '<p class="price">' +
+                  val.price +
+                  "~</p>" +
+                  "</li>"
+              );
+            });
+            $(".swiper1 .swiper-wrapper").empty().append(items.join(""));
+            var swiper1 = new Swiper(".swiper1", {
+              spaceBetween: 30,
+              loop: true,
+              navigation: {
+                nextEl: "#hotel .right",
+                prevEl: "#hotel .left",
+              },
+              slidesPerView: 1,
+              breakpoints: {
+                900: {
+                  slidesPerView: 2,
+                },
+                1500: {
+                  slidesPerView: 3,
+                },
+                1600: {
+                  slidesPerView: 4,
+                },
+              },
+            });
+          } else {
+            console.log("No data available for slider.");
+          }
+        }).fail(function () {
+          console.log("Error loading JSON data");
+        });
+
+        //sale
+        $.getJSON("hotel.json", function (data) {
+          if (data && data.sale && data.sale.length > 0) {
+            var items = [];
+            $.each(data.sale, function (key, val) {
+              items.push(
+                '<li class="swiper-slide">' +
+                  '<div class="commonImg">' +
+                  '<img src="' +
+                  val.image +
+                  '" alt="" class="img-cover" />' +
+                  "</div>" +
+                  "<p>" +
+                  val.rating +
+                  "</p>" +
+                  "<h4>" +
+                  val.title +
+                  "</h4>" +
+                  "<p>" +
+                  val.description +
+                  "</p>" +
+                  '<p class="oriprice">' +
+                  val.originalPrice +
+                  "</p>" +
+                  '<div class="conText">' +
+                  '<span class="percent">' +
+                  val.discount +
+                  "</span>" +
+                  '<span class="price">' +
+                  val.price +
+                  "~</span>" +
+                  "</div>" +
+                  "</li>"
+              );
+            });
+            $(".swiper2 .swiper-wrapper").empty().append(items.join(""));
+
+            // Swiper 2 초기화
+            var swiper2 = new Swiper(".swiper2", {
+              spaceBetween: 30,
+              loop: true,
+              navigation: {
+                nextEl: "#sale .right",
+                prevEl: "#sale .left",
+              },
+              slidesPerView: 1,
+              breakpoints: {
+                900: {
+                  slidesPerView: 2,
+                },
+                1500: {
+                  slidesPerView: 3,
+                },
+                1600: {
+                  slidesPerView: 4,
+                },
+              },
+            });
+          } else {
+            console.log("No sale data available.");
+          }
+        }).fail(function () {
+          console.log("Error loading sale data");
+        });
+
+        ///////////////////////////////////
+        //이벤트 배너
+        ///////////////////////////////////
+
+        var swiper3 = new Swiper(".mySwiper3", {
+          // Optional parameters
+          direction: "horizontal",
+          loop: true,
+          speed: 1500,
+          // autoplay: {
+          //   delay: 5000,
+          // },
+          // If we need pagination
+          pagination: {
+            el: ".slider__pagination",
+            clickable: true,
+          },
+          on: {
+            slideChangeTransitionStart: function () {
+              // Slide captions
+              var swiper = this;
+              setTimeout(function () {
+                var currentTitle = $(swiper.slides[swiper.activeIndex]).attr(
+                  "data-title"
+                );
+                var currentSubtitle = $(swiper.slides[swiper.activeIndex]).attr(
+                  "data-subtitle"
+                );
+                var currentSubcon = $(swiper.slides[swiper.activeIndex]).attr(
+                  "data-subcon"
+                );
+              }, 500);
+              gsap.to($(".current-title"), 0.4, {
+                autoAlpha: 0,
+                y: -40,
+                ease: Power1.easeIn,
+              });
+              gsap.to($(".current-subtitle"), 0.4, {
+                autoAlpha: 0,
+                y: -40,
+                delay: 0.15,
+                ease: Power1.easeIn,
+              });
+              gsap.to($(".current-subcon"), 0.4, {
+                autoAlpha: 0,
+                y: -40,
+                delay: 0.25,
+                ease: Power1.easeIn,
+              });
+            },
+            slideChangeTransitionEnd: function () {
+              // Slide captions
+              var swiper = this;
+              var currentTitle = $(swiper.slides[swiper.activeIndex]).attr(
+                "data-title"
+              );
+              var currentSubtitle = $(swiper.slides[swiper.activeIndex]).attr(
+                "data-subtitle"
+              );
+              var currentSubcon = $(swiper.slides[swiper.activeIndex]).attr(
+                "data-subcon"
+              );
+              $(".slide-captions").html(function () {
+                return (
+                  "<h2 class='current-title'>" +
+                  currentTitle +
+                  "</h2>" +
+                  "<p class='current-subtitle'>" +
+                  currentSubtitle +
+                  "</p>" +
+                  "<button class='current-subcon'>" +
+                  currentSubcon +
+                  "</button>"
+                );
+              });
+              gsap.from($(".current-title"), 0.4, {
+                autoAlpha: 0,
+                y: 40,
+                ease: Power1.easeOut,
+              });
+              gsap.from($(".current-subtitle"), 0.4, {
+                autoAlpha: 0,
+                y: 40,
+                delay: 0.15,
+                ease: Power1.easeOut,
+              });
+              gsap.from($(".current-subcon"), 0.4, {
+                autoAlpha: 0,
+                y: 40,
+                delay: 0.25,
+                ease: Power1.easeOut,
+              });
+            },
+          },
+        });
+
+        // Slide captions
+        var currentTitle = $(swiper3.slides[swiper3.activeIndex]).attr(
+          "data-title"
+        );
+        var currentSubtitle = $(swiper3.slides[swiper3.activeIndex]).attr(
+          "data-subtitle"
+        );
+        var currentSubcon = $(swiper3.slides[swiper3.activeIndex]).attr(
+          "data-subcon"
+        );
+        $(".slide-captions").html(function () {
+          return (
+            "<h2 class='current-title'>" +
+            currentTitle +
+            "</h2>" +
+            "<p class='current-subtitle'>" +
+            currentSubtitle +
+            "</p>" +
+            "<button class='current-subcon'>" +
+            currentSubcon +
+            "</button>"
+          );
+        });
+      }); //end
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
