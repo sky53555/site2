@@ -134,7 +134,7 @@
       "type": "domestic"
     },
     {
-      "image": "./images/skyscrapers-sunset.jpg",
+      "image": "./images/ko1.jpg",
       "title": "[경기도] 문화 체험",
       "description": "2024.06.26~2024.06.30",
       "price": "140,000원",
@@ -148,7 +148,7 @@
       "type": "domestic"
     },
     {
-      "image": "./images/relaxation-pool-umbrella-lounge-sky.jpg",
+      "image": "./images/ko2.jpg",
       "title": "[전라도] 산 및 계곡 탐방",
       "description": "2024.07.06~2024.07.10",
       "price": "155,000원",
@@ -245,26 +245,6 @@
       "title": "[필리핀] 보라카이 해변 휴양",
       "description": "#수영 #스노클링 #해변가카페",
       "price": "460,000원"
-    }
-  ],
-  "swiper3": [
-    {
-      "image": "./images/hotel1.jpg",
-      "title": "HOTEL: BlueWave Seoul",
-      "description": "서울의 중심지에서 편안한 휴식을 즐기세요. 다양한 시설과 서비스로 여행을 더욱 특별하게 만들어 드립니다.",
-      "buttonText": "바로 예약하기"
-    },
-    {
-      "image": "./images/glassclad-skyscrapers.jpg",
-      "title": "HOTEL: Golden Sky Seoul",
-      "description": "서울의 아름다운 하늘과 도심 풍경을 감상하며 특별한 시간을 보내세요. 최상의 휴식과 서비스를 제공합니다.",
-      "buttonText": "바로 예약하기"
-    },
-    {
-      "image": "./images/aerial-shot-aria-hotel-las-vegas.jpg",
-      "title": "HOTEL: Crystal Seoul",
-      "description": "시원한 서울의 공기와 아름다운 전망을 감상하며 편안한 휴식을 취하세요. 최상의 품질과 서비스로 여행을 즐겁게 만들어 드립니다.",
-      "buttonText": "바로 예약하기"
     }
   ]
 }

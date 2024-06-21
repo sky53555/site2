@@ -18,10 +18,7 @@ COMMON
   top: 13rem;
   color: #fff;
 }
-/* #subEvent .mainTxt,
-#subCst, .mainTxt{
 
-} */
 .commonWrap {
   width: 80%;
   height: 100%;
@@ -30,11 +27,11 @@ COMMON
 }
 .swiper1 {
   width: 100%;
-  height: 52vh;
+  height: 62vh;
 }
 .swiper2 {
   width: 100%;
-  height: 58vh;
+  height: 67vh;
 }
 
 .commonCon ul li {
@@ -48,13 +45,10 @@ COMMON
   align-items: center;
 }
 .commonCon ul li .commonImg {
-  height: 35vh;
+  height: 38vh;
   overflow: hidden;
 }
-.commonCon:nth-of-type(2) ul li .commonImg {
-  height: 30vh;
-  overflow: hidden;
-}
+
 .commonCon ul li img {
   transition: 1s;
 }
@@ -75,7 +69,7 @@ COMMON
 .commonCon ul li .percent {
   color: var(--sub-color);
   font-weight: bold;
-  font-size: var(--fontSize-body-1);
+  font-size: var(--fontSize-title-4);
 }
 
 .commonCon p:first-of-type {
@@ -136,6 +130,7 @@ PACKAGE
   position: relative;
   width: 100%;
   padding-top: var(--pTop-sub-1);
+  padding-bottom: var(--pBottom-1);
 }
 .mySwiper1 {
   width: 80%;
@@ -148,42 +143,36 @@ PACKAGE
   margin: 0 auto;
   text-align: center;
 }
-.packageWrap .buttons {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-}
-.packageWrap .buttons button {
-  background-color: #fff;
-  outline: none;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 1px solid var(--main-color);
-  color: var(--main-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  font-size: 1.7rem;
-}
 
 .mySwiper1 .packImg {
   width: 100%;
-  height: 30vh;
+  height: 40vh;
+  overflow: hidden;
+}
+.mySwiper1 .packImg img {
+  transition: 0.7s;
+}
+.packageWrap .buttons button {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
+button.prevBtn {
+  left: 6.5rem;
+}
+button.nextBtn {
+  right: 6.5rem;
 }
 .mySwiper1 li {
   display: grid;
   grid-template-columns: 1fr;
   cursor: pointer;
 }
+.mySwiper1 li:hover .packImg img {
+  transform: scale(1.1);
+}
 .mySwiper1 li .padding {
-  padding: 0.6rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   line-height: 2;
@@ -255,6 +244,7 @@ PACKAGE
 #discount {
   width: 90%;
   margin: 0 auto;
+  padding-top: var(--pTop-1);
 }
 .discountWrap .mainTxt {
   text-align: left;
@@ -343,13 +333,11 @@ PACKAGE
 
 /* #theme */
 #theme {
-  border: 3px solid lime;
   padding-top: var(--pTop-1);
-  padding-bottom: var(--pBottom-1);
 }
 .themeWrap {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
 }
 .themeCon {
   display: flex;
@@ -443,8 +431,8 @@ HOTEL
   cursor: pointer;
 }
 #intro ul li .img {
-  width: 15rem;
-  height: 15rem;
+  width: 13rem;
+  height: 13rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -555,36 +543,21 @@ HOTEL
   width: 80%;
 }
 #adver .slide-captions .current-subcon {
-  background-color: transparent;
+  background: transparent;
   outline: none;
-  border: 1px solid var(--gray-03);
-  padding: 1rem;
-  font-size: var(--fontSize-body-4);
   color: #fff;
-  margin-top: 1.5rem;
-  cursor: pointer;
-  width: 220px;
+  margin-top: 1rem;
   border-radius: 0;
+  font-size: 1rem;
+  width: 200px;
   height: 60px;
-  position: relative;
+  display: flex;
+  border: 2px solid #fff;
+  /* transition: 0.7s; */
 }
-
-#adver .slide-captions .current-subcon:before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0; /* 기본 상태의 높이를 0으로 설정 */
-  left: 0;
-  background-color: transparent;
-  transition: width 1s, height 1s, background-color 1s opacity 1s; /* 트랜지션 속성 추가 */
-  z-index: -1;
-  opacity: 0;
-}
-#adver .slide-captions .current-subcon:hover::before {
-  width: 100%;
-  height: 100%;
+#adver .slide-captions .current-subcon:hover {
   background-color: var(--main-color);
-  opacity: 1;
+  border: none;
 }
 .slider__pagination .swiper-pagination-bullet {
   width: 11px;
@@ -632,11 +605,9 @@ HOTEL
 .clickWrap .clickCon ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   width: 100%;
-  height: 50vh; /*height 줘야 나옴*/
   gap: 2rem;
-  border: 1px solid red;
+  height: 50vh;
 }
 
 .clickWrap .clickCon ul li {
@@ -706,7 +677,6 @@ EVENT
   background-color: #006d77;
 }
 #subEvent {
-  border: 3px solid lime;
   padding-bottom: var(--pBottom-1);
 }
 #subEvent .mainTxt {
@@ -722,7 +692,6 @@ EVENT
 }
 .eventMain li {
   cursor: pointer;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 }
@@ -758,7 +727,7 @@ EVENT
 }
 #eventCon2 .commonCon ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -772,12 +741,10 @@ EVENT
 #eventCon2 .commonCon p:first-of-type {
   color: var(--gray-02);
   margin-top: 0.5rem;
+  font-size: 1.3rem;
 }
 #eventCon2 {
   padding-bottom: var(--pBottom-2);
-}
-#eventCon2 .commonCon ul {
-  grid-template-columns: repeat(3, 1fr);
 }
 
 /*****************  

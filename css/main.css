@@ -484,12 +484,11 @@ RECOMMOND
 }
 .mySwiper1 {
   width: 80%;
+  position: relative;
 }
 .rcmBoxWrap {
   transition: transform 0.5s ease;
-  position: relative;
   cursor: pointer;
-  height: 50vh;
 }
 
 .rcmBoxWrap:hover .rcmImg img {
@@ -543,32 +542,28 @@ RECOMMOND
   font-size: var(--fontSize-body-1);
   text-align: right;
 }
-.rcmBtn {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-  z-index: 1;
-}
+
 .rcmBtn button {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  position: absolute;
   font-size: 2.5rem;
   color: var(--main-color);
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 1px solid var(--main-color);
-  background-color: #fff;
+  background-color: #ffffff;
   outline: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  z-index: 1;
 }
-.rcmBtn button:first-child {
-  margin-right: 30px;
+.rcmBtn .prevBtn {
+  left: 3rem;
+}
+.rcmBtn .nextBtn {
+  right: 3rem;
+  left: initial;
 }
 
 .domestic-img1 {
@@ -596,7 +591,6 @@ RECOMMOND
 ZIP
  ************************/
 #zipWrap {
-  border: 3px solid lime;
   padding-top: var(--pTop-1);
   padding-bottom: var(--pBottom-1);
 }
@@ -615,7 +609,7 @@ ZIP
 .zipLeft ul {
   width: 75%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -733,6 +727,7 @@ ZIP
   height: 10px;
   background-color: #cacaca;
   position: relative;
+  border-radius: 5px;
 }
 .progress {
   height: 100%;
@@ -742,6 +737,7 @@ ZIP
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 5px;
 }
 
 /************************ 
@@ -758,7 +754,6 @@ advertise
 
 #advertise .adSlide .swiper-slide {
   position: relative;
-  border: 3px solid blue;
   overflow: hidden;
 }
 
@@ -772,7 +767,9 @@ advertise
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  z-index: 10;
 }
+
 #advertise .slide-captions .current-title {
   margin: 0;
   font-size: 2.5rem;
@@ -829,20 +826,24 @@ advertise
   background: transparent;
   outline: none;
   color: #fff;
-  margin-top: 2rem;
+  margin: 30px 0 0 0;
   border-radius: 0;
   font-size: 1rem;
   width: 200px;
   height: 60px;
   display: flex;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
+  /* transition: 0.7s; */
 }
 
+#advertise .slide-captions .current-subcon:hover {
+  background-color: var(--main-color);
+  border: none;
+}
 /************************ 
 SNS
  ************************/
 #snsWrap {
-  border: 3px solid rgb(255, 81, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -910,12 +911,7 @@ SNS
 .snsPhoto:hover .hiddenText {
   opacity: 1;
 }
-#snsPhotoWrap1 {
-  border: 1px solid lime;
-}
-#snsPhotoWrap2 {
-  border: 1px solid lime;
-}
+
 #snsPhotoWrap1 .snsPhoto:nth-child(2) {
   /* grid-column: 2 / 3;
   grid-row: 1 / 3; */
@@ -940,6 +936,43 @@ SNS
   border-radius: 30px;
   cursor: pointer;
   margin: 7rem 0 0;
+}
+/************************ 
+modal
+ ************************/
+.modal {
+  display: none; /* 기본적으로 숨겨짐 */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* 투명도 */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 중앙 정렬 */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /************************ 
@@ -967,9 +1000,10 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: center;
+  align-items: center;
   color: #fff;
-  line-height: 12vh;
   font-size: 1.4rem;
+  padding: 3rem 0;
 }
 .fotoText .number {
   font-size: 2rem;

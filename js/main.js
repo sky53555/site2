@@ -254,7 +254,8 @@ $(document).ready(function () {
         swiperWrapper.append(slide);
       }
 
-      swiper2.update();
+      swiper2.update(); // 스와이퍼 업데이트
+      swiper2.slideTo(0); // 스와이퍼 위치를 첫 번째 슬라이드로 초기화
       updateProgressBar.call(swiper2); // 진행 바 업데이트
     });
   }
@@ -286,9 +287,9 @@ $(document).ready(function () {
     direction: "horizontal",
     loop: true,
     speed: 1500,
-    // autoplay: {
-    //   delay: 5000,
-    // },
+    autoplay: {
+      delay: 5000,
+    },
     // If we need pagination
     pagination: {
       el: ".slider__pagination",
