@@ -111,7 +111,7 @@
       <section id="package">
         <div class="txtWrap">
           <div class="mainTxt">
-            <h3>누구나 꿈꾸는 여행지</h3>
+            <h3>베스트 여행상품</h3>
             <h2>후기가 말해주는 진짜 여행</h2>
           </div>
           <div class="subTxt">
@@ -204,8 +204,8 @@
             <div class="discountCon">
               <ul>
                 <li>
-                  <img src="./images/air.png" alt="" class="ani1" />
-                  <img src="./images/travel.png" alt="" />
+                  <img src="./images/air.png" alt="비행기" class="ani1" />
+                  <img src="./images/travel.png" alt="여행 가방" />
                   <div class="discounText">
                     <h3>최대 50% 할인</h3>
                     <p>
@@ -216,8 +216,8 @@
                   </div>
                 </li>
                 <li>
-                  <img src="./images/bullun.png" alt="" class="ani2" />
-                  <img src="./images/pool.png" alt="" />
+                  <img src="./images/bullun.png" alt="튜브" class="ani2" />
+                  <img src="./images/pool.png" alt="슈영장" />
                   <div class="discounText">
                     <h3>최대 30% 할인</h3>
                     <p>
@@ -308,16 +308,16 @@
           <div class="social">
             <div class="imgs">
               <div class="img">
-                <img src="./images/facebook.png" alt="" />
+                <img src="./images/facebook.png" alt="페이스북로고" />
               </div>
               <div class="img">
-                <img src="./images/instagram.png" alt="" />
+                <img src="./images/instagram.png" alt="인스타그램로고" />
               </div>
               <div class="img">
-                <img src="./images/youtube.png" alt="" />
+                <img src="./images/youtube.png" alt="유튜브로고" />
               </div>
             </div>
-            <img src="./images/logo-b.png" alt="" />
+            <img src="./images/logo-b.png" alt="트래블플러스로고" />
           </div>
         </div>
       </footer>
@@ -345,6 +345,7 @@
               $(this).addClass('active');
           });
       
+          // 패키지 여행지 추천
           // Swiper 인스턴스 초기화
           var swiper1 = new Swiper('.mySwiper1', {
               spaceBetween: 30,
@@ -355,13 +356,10 @@
               },
               slidesPerView: 1,
               breakpoints: {
-                  900: {
+                  768: {
                       slidesPerView: 2,
                   },
                   1440: {
-                      slidesPerView: 3,
-                  },
-                  1600: {
                       slidesPerView: 4,
                   },
               },
@@ -370,7 +368,7 @@
  
       
       function loadContent(category) {
-          $.getJSON("package.json", function(data) {
+          $.getJSON("./json/package.json", function(data) {
               const filteredContent = data.swiper1.filter(item => item.type === category);
               const swiperWrapper = $(".mySwiper1 .swiper-wrapper");
               swiperWrapper.empty();
@@ -397,8 +395,8 @@
           });
 
         }
-
-        $.getJSON("package.json", function(data) {
+        //특가할인
+        $.getJSON("./json/package.json", function(data) {
           const content = data.swiper2;
           const swiperWrapper = $(".mySwiper2 .swiper-wrapper");
           swiperWrapper.empty();
@@ -420,17 +418,14 @@
       });
 
       var swiper2 = new Swiper('.mySwiper2', {
-              spaceBetween: 70,
+              spaceBetween: 40,
               loop: true,
               slidesPerView: 1,
               breakpoints: {
                 768: {
                       slidesPerView: 2,
                   },
-                  1200: {
-                      slidesPerView: 3,
-                  },
-                  1600: {
+                  1440: {
                       slidesPerView: 4,
                   },
               },

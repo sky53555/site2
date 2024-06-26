@@ -148,17 +148,14 @@ $(document).ready(function () {
     },
     slidesPerView: 1,
     breakpoints: {
-      900: {
-        slidesPerView: 2,
-      },
-      1500: {
+      1440: {
         slidesPerView: 3,
       },
     },
   });
 
   function loadContent(category) {
-    $.getJSON("data.json", function (data) {
+    $.getJSON("./json/data.json", function (data) {
       const content = data[category];
       const swiperWrapper = $(".mySwiper1 .swiper-wrapper");
       swiperWrapper.empty();
@@ -218,7 +215,7 @@ $(document).ready(function () {
   });
 
   function loadZipContent(category) {
-    $.getJSON("zipData.json", function (data) {
+    $.getJSON("./json/zipData.json", function (data) {
       const content = data[category];
       const swiperWrapper = $(".mySwiper2 .swiper-wrapper");
       swiperWrapper.empty();
@@ -397,6 +394,7 @@ $(document).ready(function () {
   });
   //////////////////////////
   //더 보기 버튼
+  //////////////////////////
   $("#loadMoreButton").on("click", function () {
     // snsPhotoWrap1을 복사하여 snsPhotoWrap2에 추가
     var $originalWrap = $("#snsPhotoWrap1");
@@ -421,7 +419,8 @@ $(document).ready(function () {
   ////////////////////////
   //더 보기 버튼
   // JSON 데이터 로드
-  $.getJSON("picture.json", function (data) {
+  ////////////////////////
+  $.getJSON("./json/picture.json", function (data) {
     var initialHtml = "";
     var moreHtml = "";
 

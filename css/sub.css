@@ -7,7 +7,7 @@ COMMON
 
 #subPackage .visualSearch,
 #subHotel .visualSearch {
-  bottom: -3rem;
+  bottom: -2.5rem;
 }
 
 #subPackage h2,
@@ -20,14 +20,14 @@ COMMON
 }
 
 .commonWrap {
-  width: 80%;
+  width: 90%;
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 .swiper1 {
   width: 100%;
-  height: 62vh;
+  height: 60vh;
 }
 .swiper2 {
   width: 100%;
@@ -45,7 +45,7 @@ COMMON
   align-items: center;
 }
 .commonCon ul li .commonImg {
-  height: 38vh;
+  height: 32vh;
   overflow: hidden;
 }
 
@@ -69,7 +69,7 @@ COMMON
 .commonCon ul li .percent {
   color: var(--sub-color);
   font-weight: bold;
-  font-size: var(--fontSize-title-4);
+  font-size: var(--fontSize-body-1);
 }
 
 .commonCon p:first-of-type {
@@ -78,15 +78,14 @@ COMMON
   color: var(--main-color);
 }
 .commonCon h4 {
-  font-size: 1.5rem;
+  font-size: var(--fontSize-body-3);
 }
 .commonCon h4 + p {
   font-size: var(--fontSize-body-3);
 }
 .commonCon .price {
-  font-size: 2.2rem;
+  font-size: var(--fontSize-title-4);
   font-weight: bold;
-  margin-top: 10px;
 }
 .commonTxt {
   font-size: var(--fontSize-body-1);
@@ -146,7 +145,7 @@ PACKAGE
 
 .mySwiper1 .packImg {
   width: 100%;
-  height: 40vh;
+  height: 26vh;
   overflow: hidden;
 }
 .mySwiper1 .packImg img {
@@ -214,7 +213,7 @@ button.nextBtn {
   cursor: pointer;
 }
 .specialImg {
-  height: 50vh;
+  height: 44vh;
 }
 .specialCon img {
   border-radius: 1.8rem;
@@ -286,10 +285,10 @@ button.nextBtn {
     transform: translateX(0) translateY(0) scaleX(1);
   }
   50% {
-    transform: translateX(200px) translateY(50px) scaleX(1);
+    transform: translateX(100px) translateY(50px) scaleX(1);
   }
   51% {
-    transform: translateX(200px) translateY(50px) scaleX(-1);
+    transform: translateX(100px) translateY(50px) scaleX(-1);
   }
   100% {
     transform: translateX(0) translateY(0) scaleX(-1);
@@ -320,10 +319,10 @@ button.nextBtn {
 }
 
 .discounText h3 {
-  font-size: var(--fontSize-title-2);
+  font-size: var(--fontSize-title-3);
 }
 .discounText h3 + p {
-  font-size: var(--fontSize-body-2);
+  font-size: var(--fontSize-body-3);
   margin: 1rem 0;
 }
 .discounText .date {
@@ -686,7 +685,7 @@ EVENT
 .eventMain {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   gap: 3rem;
 }

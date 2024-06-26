@@ -3,7 +3,8 @@
 /************************ 
 reset
  ************************/
-
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -19,7 +20,7 @@ a {
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Pretendard Variable", "Poppins", sans-serif;
   word-break: keep-all;
   overflow-x: hidden;
 }
@@ -34,9 +35,9 @@ body {
   --fontSize-title-2: calc(1.6rem + 1vw);
   --fontSize-title-3: calc(1.3rem + 1vw);
   --fontSize-title-4: calc(1rem + 1vw);
-  --fontSize-body-1: calc(0.5rem + 1vw);
-  --fontSize-body-2: 1.8rem;
-  --fontSize-body-3: 1.3rem;
+  --fontSize-body-1: calc(0.7rem + 1vw);
+  --fontSize-body-2: 1.5rem;
+  --fontSize-body-3: 1.2rem;
   --fontSize-body-4: 1rem;
   --fontSize-label-1: 0.9rem;
 
@@ -92,10 +93,10 @@ COMMON
   letter-spacing: 1px;
   margin-bottom: 70px;
 }
-.txtWrap{
-width:90%;
-margin:0 auto;
-  }
+.txtWrap {
+  width: 90%;
+  margin: 0 auto;
+}
 .subTxt {
   margin: 0 auto;
   width: 250px;

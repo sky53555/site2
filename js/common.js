@@ -30,27 +30,46 @@ $(document).ready(function () {
     $("body").css({ overflow: "auto" });
   });
 
-  //   let hamburger = document.querySelector("#hamburger-1");
-  //   let hiddenNav = document.querySelector(".hiddenNav");
-  //   let body = document.body;
+  //////////////////////////
+  //nav link 업데이트
+  //////////////////////////
+  const links = $("header .innerNav ul li a");
+  if ($("header").length) {
+    links.each(function (index) {
+      $(this).on("click", function () {
+        localStorage.setItem("activeNavLink", index);
+        updateActiveLink(links);
+      });
+    });
 
-  //   hamburger.addEventListener("click", function () {
-  //     console.log("클릭");
-  //     this.classList.toggle("active");
-  //     hiddenNav.classList.toggle("visible");
+    // 인덱스 페이지가 아닐 때만 상태 복원
+    if (!window.location.pathname.endsWith("/index.html")) {
+      updateActiveLink(links);
+    } else {
+      // 인덱스 페이지에서는 모든 링크에서 'clicked' 클래스 제거
+      removeClickedClass(links);
+    }
+  }
 
-  //     if (this.classList.contains("active")) {
-  //       body.style.overflow = "hidden"; // 스크롤바 숨기기
-  //     } else {
-  //       body.style.overflow = "auto"; // 스크롤바 복원
-  //     }
-  //   });
+  // 예약 및 조회 버튼 클릭시 모든 'clicked' 클래스 제거
+  $(".subBtn").on("click", function () {
+    removeClickedClass(links);
+    localStorage.removeItem("activeNavLink"); // 선택된 링크 인덱스 삭제
+  });
 
-  //   hiddenNav.querySelectorAll("a").forEach((item) => {
-  //     item.addEventListener("click", function () {
-  //       hamburger.classList.remove("active");
-  //       hiddenNav.classList.remove("visible");
-  //       body.style.overflow = "auto";
-  //     });
-  //   });
+  function updateActiveLink(links) {
+    const activeIndex = localStorage.getItem("activeNavLink");
+    if (activeIndex !== null) {
+      links.each(function (index) {
+        $(this).removeClass("clicked");
+        if (index === parseInt(activeIndex, 10)) {
+          $(this).addClass("clicked");
+        }
+      });
+    }
+  }
+
+  function removeClickedClass(links) {
+    links.removeClass("clicked");
+  }
 }); //end

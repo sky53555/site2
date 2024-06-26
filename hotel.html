@@ -110,23 +110,23 @@
       <main>
         <section id="intro">
           <div class="mainTxt">
-            <h2>Travel with 함께라면!</h2>
+            <h2>TRAVEL PLUS 함께라면!</h2>
           </div>
           <ul>
             <li>
-              <p class="img"><img src="./images/1.png" alt="" /></p>
+              <p class="img"><img src="./images/1.png" alt="호텔" /></p>
               <p class="text">할인쿠폰</p>
             </li>
             <li>
-              <p class="img"><img src="./images/2.png" alt="" /></p>
+              <p class="img"><img src="./images/2.png" alt="쿠폰" /></p>
               <p class="text">특가 모음</p>
             </li>
             <li>
-              <p class="img"><img src="./images/3.png" alt="" /></p>
+              <p class="img"><img src="./images/3.png" alt="지도" /></p>
               <p class="text">BEST 여행상품</p>
             </li>
             <li>
-              <p class="img"><img src="./images/4.png" alt="" /></p>
+              <p class="img"><img src="./images/4.png" alt="달력" /></p>
               <p class="text">땡처리 모음</p>
             </li>
           </ul>
@@ -192,45 +192,13 @@
             </div>
           </div>
         </section>
-        <!-- <section id="discount">
-          <div class="discountWrap pTopBot">
-            <h2>4월 특가 할인 진행중</h2>
-            <div class="discountCon">
-              <ul>
-                <li>
-                  <img src="./images/air.png" alt="" class="ani1" />
-                  <img src="./images/travel.png" alt="" />
-                  <div class="discounText">
-                    <h3>최대 50% 할인</h3>
-                    <p>
-                      동남아에서<br />
-                      즐기는 호캉스
-                    </p>
-                    <p class="date">2024.08~2024.09</p>
-                  </div>
-                </li>
-                <li>
-                  <img src="./images/bullun.png" alt="" class="ani2" />
-                  <img src="./images/pool.png" alt="" />
-                  <div class="discounText">
-                    <h3>최대 30% 할인</h3>
-                    <p>
-                      내가 원하는 곳 어디든<br />
-                      찾아가는 서비스
-                    </p>
-                    <p class="date">2024.09~2024.10</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section> -->
+
         <section id="adver">
           <div class="swiper-wrapper mySwiper3">
             <div class="adverText swiper-wrapper">
               <div
                 class="swiper-slide slide-1"
-                data-title="HOTEl:  CORAL TOWER BUSAN"
+                data-title="HOTEL:  CORAL TOWER BUSAN"
                 data-subtitle="부산의 해운대 해변에 위치해 도시와 바다가 어우러진 멋진 경관"
                 data-subcon="바로 예약하기"
               ></div>
@@ -242,7 +210,7 @@
               ></div>
               <div
                 class="swiper-slide slide-3"
-                data-title="HOTEl: RIVERSIDE GANGNAM"
+                data-title="HOTEL: RIVERSIDE GANGNAM"
                 data-subtitle="비즈니스와 여가를 위한 완벽한 선택지로, 고급 스파와 피트니스 센터."
                 data-subcon="바로 예약하기"
               ></div>
@@ -253,20 +221,6 @@
             <!-- If we need pagination -->
             <div class="slider__pagination"></div>
           </div>
-
-          <!-- <div class="adverText">
-            <h2>HOTEl: ANTEROOM SEOUL</h2>
-            <p>
-              남산과 한강의 탁 트인 서울 뷰와 함께 낮에는 책과 커피, 저녁에는
-              칵테일과 와인을 즐길 수 있는 가로수길에 위치한 안테룸 호텔
-            </p>
-            <button>바로 예약하기</button>
-          </div>
-          <div class="dots">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-          </div> -->
         </section>
         <section id="clickBest">
           <div class="clickWrap pTopBot">
@@ -319,16 +273,16 @@
           <div class="social">
             <div class="imgs">
               <div class="img">
-                <img src="./images/facebook.png" alt="" />
+                <img src="./images/facebook.png" alt="페이스북로고" />
               </div>
               <div class="img">
-                <img src="./images/instagram.png" alt="" />
+                <img src="./images/instagram.png" alt="인스타그램로고" />
               </div>
               <div class="img">
-                <img src="./images/youtube.png" alt="" />
+                <img src="./images/youtube.png" alt="유튜브로고" />
               </div>
             </div>
-            <img src="./images/logo-b.png" alt="" />
+            <img src="./images/logo-b.png" alt="트래블플러스로고" />
           </div>
         </div>
       </footer>
@@ -336,7 +290,7 @@
     <script>
       $(document).ready(function () {
         //new
-        $.getJSON("hotel.json", function (data) {
+        $.getJSON("./json/hotel.json", function (data) {
           if (data && data.new && data.new.length > 0) {
             var items = [];
             $.each(data.new, function (key, val) {
@@ -371,13 +325,10 @@
               },
               slidesPerView: 1,
               breakpoints: {
-                900: {
+                768: {
                   slidesPerView: 2,
                 },
-                1500: {
-                  slidesPerView: 3,
-                },
-                1600: {
+                1440: {
                   slidesPerView: 4,
                 },
               },
@@ -390,7 +341,7 @@
         });
 
         //sale
-        $.getJSON("hotel.json", function (data) {
+        $.getJSON("./json/hotel.json", function (data) {
           if (data && data.sale && data.sale.length > 0) {
             var items = [];
             $.each(data.sale, function (key, val) {
@@ -436,13 +387,10 @@
               },
               slidesPerView: 1,
               breakpoints: {
-                900: {
+                768: {
                   slidesPerView: 2,
                 },
-                1500: {
-                  slidesPerView: 3,
-                },
-                1600: {
+                1440: {
                   slidesPerView: 4,
                 },
               },
