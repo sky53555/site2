@@ -434,6 +434,9 @@
   /* sub */
 
   /* sub - 768package */
+  .visualSearch .visualinner form input {
+    height: initial;
+  }
   #subPackage .visualSearch,
   #subHotel .visualSearch {
     bottom: -5rem;
@@ -639,12 +642,14 @@
     width: 50%;
   }
 }
-
 /**************************
-320px
+375px
 *************************/
-@media (max-width: 320px) {
-  /* 320main */
+@media (max-width: 375px) {
+  /* 375main */
+  #header {
+    padding: 1.5rem 0;
+  }
   .hiddenNav ul li a {
     font-size: 1.5rem;
   }
@@ -680,86 +685,68 @@
   #hamburger-1 .line:nth-child(3) {
     top: 20px;
   }
-  .visualBtn {
-    display: none;
-  }
   .visualTxt {
-    left: 50%;
-    transform: translateX(-50%);
+    left: 10%;
     margin: 0;
-    text-align: center;
+    text-align: left;
     top: 30%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
   .visualTxt h2 {
-    margin-bottom: 2rem;
     font-size: 3rem;
   }
-
-  @keyframes slideIn {
-    from {
-      top: 35%;
-      opacity: 0;
-    }
-    to {
-      top: 30%;
-      opacity: 1;
-    }
+  .visualTxt .mainBtn {
+    width: 130px;
+    height: 50px;
+    font-size: 0.9rem;
   }
   .visualSearch {
-    bottom: -23rem;
+    bottom: -19rem;
   }
   .visualinner form div:not(:nth-child(4)):not(:nth-child(5))::after {
     display: none;
   }
-  .visualinner form div {
-    height: 80px;
-  }
+
   .visualinner form {
     display: grid;
     grid-template-columns: 1fr;
   }
   .visualinner form div {
-    height: 14vh;
+    height: 12vh;
+    width: 100%;
   }
   .visualinner form div:nth-child(1) {
     border-bottom: 1px solid black;
+    width: 100%;
   }
 
   .visualinner form div:nth-child(2) {
     border-bottom: 1px solid black;
     padding-left: 2rem;
+    width: 100%;
   }
 
   .visualinner form div:nth-child(3) {
     padding-left: 2rem;
     border-bottom: 1px solid black;
+    width: 100%;
   }
 
   .visualinner form div:nth-child(4) {
     padding-left: 2rem;
+    width: 100%;
   }
 
   .visualinner form div:nth-child(5) {
     height: 14vh;
     padding: 1.5rem 0;
+    width: 100%;
   }
 
   #recommend {
     padding-top: 30rem;
   }
-  .subTxt {
-    width: 200px;
-    gap: 2rem;
-  }
-  .subTxt p {
-    font-size: 1.1rem;
-    width: 40%;
-  }
-
   .rcmImgWrap {
     padding-top: 5rem;
     flex-wrap: wrap;
@@ -769,9 +756,10 @@
   }
   .rcmLeft {
     width: 100%;
-    height: 26vh;
+    height: initial;
     padding: initial;
-    padding-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .rcmLeft .rcmText {
     width: 100%;
@@ -806,6 +794,369 @@
   .rcmImg {
     height: 30vh;
   }
+  .visualSearch .visualinner form input {
+    height: initial;
+  }
+  .zipLeft ul {
+    grid-template-columns: 1fr;
+  }
+  .zipText {
+    padding: 1rem;
+  }
+  .zipText h3 {
+    font-size: 0.8rem;
+  }
+  .zipText h2 {
+    font-size: 0.7rem;
+  }
+  #advertise .slide-captions .current-title {
+    font-size: 1.2rem;
+  }
+  #advertise .slide-captions .current-subtitle {
+    font-size: 1rem;
+  }
+  #advertise .current-subcon {
+    width: 120px;
+    height: 50px;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+  .slider__pagination {
+    bottom: -1rem !important;
+  }
+  .snsPhotoWrap,
+  #snsPhotoWrap2 {
+    grid-template-columns: 1fr;
+    height: initial;
+  }
+  .snsPhotoWrap .snsPhoto {
+    height: 30vh;
+  }
+  /* 375package */
+  #package {
+    padding-top: 30rem;
+  }
+  #package .buttons {
+    display: none;
+  }
+  #package .mySwiper1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #special {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+  #subPackage .visualSearch,
+  #subHotel .visualSearch {
+    bottom: -20rem;
+  }
+  .visualSearch label {
+    font-size: 1rem;
+  }
+  .visualSearch .visualinner form input {
+    font-size: 0.8rem;
+  }
+  .visualinner form div,
+  .visualinner form div:nth-child(5) {
+    height: 11vh;
+  }
+  #subPackage h2,
+  #subHotel h2 {
+    font-size: 1.5rem;
+    top: 9rem;
+    left: 3rem;
+  }
+  .packageWrap {
+    padding-top: 5rem;
+  }
+  #special .mySwiper2 {
+    transform: translateX(5rem);
+  }
+  .specialImg {
+    width: 70vw;
+  }
+  .specialText {
+    width: 70%;
+    left: 1rem;
+    bottom: -4rem;
+  }
+  #discount {
+    padding-top: 5rem;
+  }
+  .discountWrap .mainTxt {
+    width: 90%;
+  }
+  .discountCon {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .discounText h3 {
+    font-size: 1.2rem;
+  }
+  .discounText h3 + p {
+    font-size: 1rem;
+  }
+  .discounText .date {
+    font-size: 0.8rem;
+  }
+  .verti {
+    font-size: 1rem;
+    top: 2rem;
+  }
+  .themeText h2 {
+    font-size: 1.2rem;
+  }
+  .themeText p {
+    font-size: 0.8rem;
+  }
+  /* 375hotel */
+  #intro ul {
+    flex-wrap: wrap;
+  }
+  .commonTxt h2 {
+    font-size: 1.5rem;
+  }
+  .commonBtn {
+    gap: 1rem;
+  }
+  .commonBtn button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+  .commonCon .price {
+    font-size: 1.8rem;
+  }
+  .commonCon ul li .percent {
+    font-size: 1.5rem;
+  }
+  #adver .slide-captions .current-title {
+    font-size: 1rem;
+  }
+  #adver .slide-captions .current-subtitle {
+    font-size: 0.8rem;
+  }
+  #adver .slide-captions .current-subcon {
+    width: 120px;
+    height: 40px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  .slider__pagination .swiper-pagination-bullet-active {
+    width: 20px;
+  }
+  #adver {
+    padding-bottom: 8rem;
+  }
+  .clickWrap .clickCon ul li p {
+    font-size: 0.8rem;
+  }
+  /* 375event */
+  #subEvent .mainTxt {
+    padding-top: 12rem;
+  }
+  #eventCon1 .commonCon ul {
+    grid-template-columns: 1fr;
+  }
+  /* 375customer */
+  #subCst .mainTxt {
+    padding-top: 12rem;
+  }
+  #subCst .search input {
+    width: 60%;
+  }
+  #custom {
+    padding-bottom: 10rem;
+  }
+  #custom .icon {
+    column-gap: 1.5rem;
+  }
+  .faqCon .head h3 {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .faqText p,
+  .announText p {
+    height: initial;
+  }
+  .plusIcon {
+    width: 20px;
+    height: 20px;
+  }
+  #faq {
+    padding-bottom: 8rem;
+  }
+  .faqText p span,
+  .announText p span {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+  }
+  .answerWrap {
+    margin: 0 3rem 0rem;
+    font-size: 0.9rem;
+  }
+  .answerWrap.on {
+    margin: 0 3rem 2rem;
+  }
+  .announCon {
+    grid-template-columns: 1fr;
+  }
+  .announCon .border h3 + p {
+    font-size: 1rem;
+  }
+  /* 375footer */
+
+  .footer_top .fotoText {
+    width: 100%;
+    padding: 2rem 0;
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .fotoText .number {
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0 auto;
+  }
+  .fotoText .number span {
+    margin-left: 0;
+  }
+  .footer_top .links span {
+    margin-right: 0;
+  }
+  .footer_top .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: start;
+    margin-top: 1rem;
+  }
+  .links span:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .footer_top .links span {
+    margin-right: 0;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .fotoText .number span {
+    width: 100%;
+    display: block;
+  }
+  .fotoText .info + p {
+    padding-top: 8rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .info {
+    font-size: 0.8rem;
+  }
+  address {
+    margin-right: 0;
+  }
+  .footer_down {
+    width: 80%;
+    padding-bottom: 3rem;
+  }
+
+  .footer_down .links {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .footer_down .links {
+    font-size: 0.8rem;
+  }
+  .social {
+    bottom: 6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .social .img {
+    width: 40px;
+    height: 40px;
+  }
+  img[src$="logo-b.png"] {
+    width: 100%;
+  }
+  .social .imgs {
+    margin-bottom: 1rem;
+  }
+  .mainTxt h3 {
+    font-size: 1rem;
+  }
+  /* 375 reserve */
+  #reserWrap .mainTxt {
+    padding-top: 12rem;
+  }
+  #allMem {
+    width: 80%;
+    padding-bottom: 10rem;
+  }
+  .login input[type="text"],
+  .login input[type="password"],
+  .nonLogin input[type="text"] {
+    font-size: 1rem;
+  }
+  .allHead h2 {
+    font-size: 1.1rem;
+  }
+}
+/**************************
+320px
+*************************/
+@media (max-width: 320px) {
+  /* 320main */
+
+  .visualinner form div,
+  .visualinner form div:nth-child(5) {
+    height: 14vh;
+  }
+  .visualBtn {
+    display: none;
+  }
+  .visualTxt {
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .visualTxt h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  .visualTxt h3 {
+    font-size: 1rem;
+  }
+
+  @keyframes slideIn {
+    from {
+      top: 35%;
+      opacity: 0;
+    }
+    to {
+      top: 30%;
+      opacity: 1;
+    }
+  }
+  #recommend {
+    padding-top: 28rem;
+  }
+  .subTxt {
+    width: 200px;
+    gap: 2rem;
+  }
+  .subTxt p {
+    font-size: 1.1rem;
+    width: 40%;
+  }
+
   /* 320zip */
   #zipWrap {
     padding-top: 5rem;
@@ -854,6 +1205,9 @@
   .zipRight {
     width: 100%;
   }
+  .zipRight .mySwiper2 {
+    width: 90%;
+  }
   .zipBar {
     width: 80%;
     margin: 0 auto;
@@ -893,7 +1247,7 @@
     padding-bottom: 8rem;
   }
   #snsWrap .button {
-    margin: 5rem 0 0;
+    margin: 8rem 0 0;
   }
   #snsPhotoWrap2 {
     display: grid;
@@ -901,6 +1255,7 @@
     margin-bottom: 0;
     grid-template-rows: 30vh;
     display: none;
+    margin-top: 5rem;
   }
   #snsPhotoWrap2 .snsPhoto:nth-child(3) {
     display: none;
@@ -915,87 +1270,12 @@
   .hiddenText span {
     font-size: 0.8rem;
   }
-  /* 320footer */
-  .footer_top .fotoText {
-    width: 80%;
-    padding: 2rem 0;
-    grid-template-columns: 1fr;
-  }
-  .fotoText .number {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-  .footer_top .links span {
-    margin-right: 0;
-  }
-  .footer_top .links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
-  }
-  .links span:not(:last-child) {
-    margin-right: 1rem;
-  }
-  .footer_top .links span {
-    margin-right: 0;
-    margin-top: 0.5rem;
-    font-size: 1rem;
-  }
-  .fotoText .number span {
-    width: 100%;
-    display: block;
-  }
-  .fotoText .info + p {
-    padding-top: 6rem;
-    font-size: 1rem;
-    text-align: center;
-  }
-  .info {
-    font-size: 0.8rem;
-  }
-  address {
-    margin-right: 0;
-  }
-  .footer_down {
-    width: 80%;
-    padding-bottom: 3rem;
-  }
-
-  .footer_down .links {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-  .footer_down .links {
-    font-size: 0.8rem;
-  }
-  .social {
-    bottom: 8rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .social .img {
-    width: 40px;
-    height: 40px;
-  }
-  img[src$="logo-b.png"] {
-    width: 100%;
-  }
-  .social .imgs {
-    margin-bottom: 1rem;
-  }
-  .mainTxt h3 {
-    font-size: 1rem;
-  }
 
   /* 320pakage */
 
   #subPackage .visualSearch,
   #subHotel .visualSearch {
-    bottom: -22rem;
+    bottom: -20rem;
   }
 
   #subPackage h2,
@@ -1011,17 +1291,20 @@
     padding-top: 5rem;
     padding-bottom: 7rem;
   }
-  .mySwiper1 .packImg {
+  #package .mySwiper1 {
+    width: 85%;
+  }
+  #package .mySwiper1 .packImg {
     height: 40vh;
   }
   #package .txtWrap {
     width: 80%;
-    padding-top: 15rem;
+    padding-top: 0rem;
   }
-  .mySwiper1 li p {
+  #package .mySwiper1 li p {
     font-size: 1rem;
   }
-  .mySwiper1 li h2 {
+  #package .mySwiper1 li h2 {
     font-size: 1.5rem;
   }
   #package .buttons {
@@ -1036,18 +1319,22 @@
     height: 50vh;
   }
   .specialText {
+    width: 95%;
     font-size: 1rem;
     left: 0.6rem;
-    bottom: -2rem;
-    padding: 1rem 1.5rem 2rem 1rem;
+    bottom: 0rem;
+    padding: 1.2rem 1.5rem 1.5rem 1rem;
   }
   .specialText h3 {
     font-size: 1.2rem;
   }
-  .mySwiper2 {
+  #special .mySwiper2 {
     width: 80%;
     transform: initial;
     margin: 0 auto;
+  }
+  .specialImg {
+    width: 100%;
   }
   .specialText h2 {
     font-size: 1.3rem;
@@ -1117,7 +1404,7 @@
   /* 320event */
 
   #subEvent .mainTxt {
-    padding-top: var(--pTop-1);
+    padding-top: 12rem;
   }
   #eventCon1 .commonCon ul {
     grid-template-columns: 1fr;
@@ -1164,8 +1451,11 @@
   #hotel {
     padding-bottom: var(--pBottom-sub-3);
   }
-  .swiper2 {
+  .swiper1 {
     height: 70vh;
+  }
+  .swiper2 {
+    height: 80vh;
   }
   #sale {
     padding-bottom: var(--pBottom-sub-3);
@@ -1248,7 +1538,7 @@
 
   /* 320customer */
   #subCst .mainTxt {
-    padding-top: var(--pTop-1);
+    padding-top: 12rem;
   }
   #subCst p {
     font-size: 1.2rem;
@@ -1320,9 +1610,14 @@
   .announCon li p:last-child {
     margin-top: 1rem;
   }
+
   /* sub - 320reserve */
+  #reserWrap .mainTxt {
+    padding-top: 12rem;
+  }
   #allMem {
     width: 75%;
+    padding-bottom: 8rem;
   }
   .allHead h2 {
     font-size: 1rem;
@@ -1336,7 +1631,25 @@
   .loginBtn {
     width: 100%;
   }
+  .login input[type="text"],
+  .login input[type="password"],
+  .nonLogin input[type="text"] {
+    font-size: 1rem;
+  }
   .idCheck {
     padding-left: 3rem;
+  }
+
+  .fotoText .info + p {
+    padding-top: 4rem;
+  }
+  .footer_top .fotoText {
+    justify-content: flex-start;
+  }
+  .fotoText .number {
+    width: 70%;
+    text-align: left;
+    margin: initial;
+    margin: 0 auto;
   }
 }

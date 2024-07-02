@@ -116,6 +116,9 @@ HEADER, NAV
 .hiddenNav.visible li:nth-of-type(4) {
   animation-delay: 0.32s;
 }
+.hiddenNav.visible li:nth-of-type(5) {
+  animation-delay: 0.35s;
+}
 #hamburger-1 {
   min-width: 40px;
   height: 40px;
@@ -399,7 +402,7 @@ VISUAL
   outline: none;
   background: transparent;
   font-size: 15px;
-  height: 100;
+  height: 100%;
 }
 .visualSearch .visualinner form button {
   outline: none;
@@ -569,10 +572,10 @@ RECOMMOND
   z-index: 1;
 }
 .rcmBtn .prevBtn {
-  left: 6.5rem;
+  left: 5rem;
 }
 .rcmBtn .nextBtn {
-  right: 6.5rem;
+  right: 5rem;
   left: initial;
 }
 
@@ -867,7 +870,6 @@ SNS
   grid-template-columns: 1fr 2fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1.5% 1%;
-  overflow: hidden;
   height: 50vh;
   transition: opacity 1s ease-in-out;
 }
