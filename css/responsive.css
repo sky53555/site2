@@ -204,7 +204,7 @@
 /**************************
 768px
 *************************/
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
   /* 768main */
 
   .headerWrap {
@@ -640,6 +640,421 @@
   /* sub - reserve */
   #allMem {
     width: 50%;
+  }
+}
+/**************************
+576px
+*************************/
+@media (min-width: 376px) and (max-width: 576px) {
+  .headerWrap {
+    display: grid;
+    grid-template-columns: 1fr 0.01fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerWrap .subBtn {
+    display: none;
+  }
+  .innerNav {
+    display: none;
+  }
+  .hiddenNav ul li a {
+    font-size: 1.8rem;
+  }
+  h1 img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hamburger-1 {
+    display: block;
+    min-width: initial;
+    width: 30px;
+    height: 30px;
+  }
+  #hamburger-1 .line:nth-child(2) {
+    top: 10px;
+  }
+  #hamburger-1 .line:nth-child(3) {
+    top: 20px;
+  }
+  .visualTxt {
+    left: 10%;
+    margin: 0;
+    text-align: left;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+  .visualTxt h2 {
+    font-size: 3rem;
+  }
+  .visualBtn {
+    top: 42%;
+  }
+  @keyframes slideIn {
+    from {
+      top: 38%;
+      opacity: 0;
+    }
+    to {
+      top: 30%;
+      opacity: 1;
+    }
+  }
+  .visualSearch {
+    bottom: -8rem;
+  }
+  .visualSearch .visualinner form input {
+    height: initial;
+  }
+  .visualinner form div:not(:nth-child(4)):not(:nth-child(5))::after {
+    display: none;
+  }
+  .visualinner form {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .visualinner form div {
+    height: 8vh;
+    width: 100%;
+  }
+  .visualinner form div:nth-child(1) {
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  .visualinner form div:nth-child(2) {
+    border-bottom: 1px solid black;
+    padding-left: 2rem;
+    width: 100%;
+  }
+
+  .visualinner form div:nth-child(3) {
+    padding-left: 2rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  .visualinner form div:nth-child(4) {
+    padding-left: 2rem;
+    width: 100%;
+  }
+
+  .visualinner form div:nth-child(5) {
+    height: 8vh;
+    padding: 1.5rem 0;
+    width: 100%;
+  }
+  .rcmImgWrap {
+    padding-top: 5rem;
+    flex-wrap: wrap;
+  }
+  .rcmLeft p {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .rcmLeft {
+    width: 100%;
+    height: initial;
+    padding: initial;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .rcmLeft .rcmText {
+    width: 100%;
+  }
+  .rcmLeft h3 {
+    font-size: 1.5rem;
+  }
+
+  .rcmBoxTxt h3 {
+    font-size: 1.3rem;
+  }
+  .rcmBoxTxt h4 {
+    font-size: 1rem;
+  }
+  .rcmBox {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 80%;
+  }
+  .rcmBoxTxt h2 {
+    font-size: 1.2rem;
+  }
+  .rcmBtn {
+    display: none;
+  }
+  .rcmImgs {
+    display: none;
+  }
+  .mySwiper1 {
+    width: 100%;
+  }
+  .rcmImg {
+    height: 30vh;
+  }
+  #zipWrap {
+    padding-top: 10rem;
+  }
+  .zipBoxWrap {
+    flex-wrap: wrap;
+  }
+  .subTitle {
+    padding-bottom: 3rem;
+  }
+  .zipLeft {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .zipLeft ul {
+    margin: 0 auto;
+    gap: 1rem;
+  }
+  .zipLeft ul li {
+    min-width: 210px;
+  }
+  .zipLeft ul li p {
+    font-size: 1.1rem;
+  }
+  .zipRight {
+    width: 80%;
+    margin-top: 4rem;
+    height: 40vh;
+  }
+  .zipText {
+    padding: 1rem;
+  }
+  .zipText h3 {
+    font-size: 0.7rem;
+  }
+  .zipText h2 {
+    font-size: 0.8rem;
+  }
+  #zipWrap {
+    padding-bottom: 10rem;
+  }
+  #advertise .slide-captions .current-title {
+    font-size: 1rem;
+  }
+  #advertise .mySwiper3 {
+    height: 35vh;
+  }
+  #advertise .current-subcon {
+    width: 140px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+  .slider__pagination {
+    bottom: -1rem !important;
+  }
+  #snsWrap {
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+  .snsPhotoWrap,
+  #snsPhotoWrap2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: initial;
+  }
+  #snsPhotoWrap2 {
+    margin-top: 8.5rem;
+  }
+  .snsPhotoWrap .snsPhoto {
+    height: 20vh;
+  }
+  #snsPhotoWrap1 .snsPhoto:nth-child(2),
+  #snsPhotoWrap2 .snsPhoto:nth-child(3) {
+    grid-area: initial;
+  }
+  #snsWrap .button {
+    margin-top: 12rem;
+  }
+
+  .footer_top .fotoText {
+    width: 100%;
+    padding: 2rem 0;
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .fotoText .number {
+    text-align: left;
+    font-size: 1.5rem;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .fotoText .number span {
+    margin-left: 0;
+  }
+  .footer_top .links span {
+    margin-right: 0;
+  }
+  .footer_top .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: start;
+    margin-top: 1rem;
+  }
+  .links span:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .footer_top .links span {
+    margin-right: 0;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .fotoText .number span {
+    width: 100%;
+    display: block;
+  }
+  .fotoText .info + p {
+    padding-top: 8rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .info {
+    font-size: 0.9rem;
+  }
+  address {
+    margin-right: 0;
+  }
+  .footer_down {
+    width: 80%;
+    padding-bottom: 3rem;
+  }
+
+  .footer_down .links {
+    margin-top: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer_down .links span {
+    margin-bottom: 1rem;
+  }
+  .fotoText .info + p {
+    padding-top: 5rem;
+  }
+  .social {
+    bottom: 6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .social .img {
+    width: 40px;
+    height: 40px;
+  }
+  img[src$="logo-b.png"] {
+    width: 100%;
+  }
+  .social .imgs {
+    margin-bottom: 1rem;
+  }
+  .mainTxt h3 {
+    font-size: 1rem;
+  }
+  /* package */
+  #subPackage h2,
+  #subHotel h2 {
+    font-size: 2rem;
+    top: 10rem;
+    left: 3rem;
+  }
+  #subPackage .visualSearch,
+  #subHotel .visualSearch {
+    bottom: -15rem;
+  }
+  #package {
+    padding-top: 23rem;
+  }
+  #package .buttons {
+    display: none;
+  }
+  #package .mySwiper1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #special {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+
+  .visualSearch label {
+    font-size: 1rem;
+  }
+  .visualSearch .visualinner form input {
+    font-size: 0.8rem;
+  }
+
+  .packageWrap {
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+  }
+  #special .mySwiper2 {
+    transform: translateX(5rem);
+  }
+  .specialImg {
+    width: 70vw;
+    height: 35vh;
+  }
+  .specialText {
+    width: 70%;
+    left: 1rem;
+    bottom: -4rem;
+  }
+  #discount {
+    padding-top: 5rem;
+  }
+  .discountCon ul,
+  .discountCon ul li {
+    grid-template-columns: 1fr;
+  }
+  .discountCon ul img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .discountWrap .mainTxt {
+    width: 90%;
+  }
+  .discountCon {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .discounText h3 {
+    font-size: 1.2rem;
+  }
+  .discounText h3 + p {
+    font-size: 1rem;
+  }
+  .discounText .date {
+    font-size: 0.8rem;
+  }
+  .verti {
+    font-size: 1rem;
+    top: 2rem;
+  }
+  #theme {
+    padding-top: 10rem;
+  }
+  .themeWrap {
+    height: 40vh;
+  }
+  #theme .mainTxt {
+    width: 60%;
+  }
+  .themeText,
+  .verti {
+    left: 1rem;
+  }
+  .themeText h2 {
+    font-size: 1.2rem;
+  }
+  .themeText p {
+    font-size: 0.8rem;
   }
 }
 /**************************

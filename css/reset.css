@@ -18,7 +18,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+body,
+html {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
 body {
   font-family: "Pretendard Variable", "Poppins", sans-serif;
   word-break: keep-all;
