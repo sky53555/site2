@@ -157,10 +157,10 @@ PACKAGE
   z-index: 1;
 }
 button.prevBtn {
-  left: 6.5rem;
+  left: 9.5rem;
 }
 button.nextBtn {
-  right: 6.5rem;
+  right: 9.5rem;
 }
 .mySwiper1 li {
   display: grid;

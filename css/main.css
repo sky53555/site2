@@ -572,10 +572,10 @@ RECOMMOND
   z-index: 1;
 }
 .rcmBtn .prevBtn {
-  left: 5rem;
+  left: 7rem;
 }
 .rcmBtn .nextBtn {
-  right: 5rem;
+  right: 7rem;
   left: initial;
 }
 

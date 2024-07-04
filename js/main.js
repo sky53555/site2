@@ -139,6 +139,15 @@ $(document).ready(function () {
   //////////////////////////////
   //top추천여행
   //////////////////////////////
+
+  const left = document.querySelector(".left");
+  const right = document.querySelector(".right");
+  left.addEventListener("click", function () {
+    console.log("left 클릭");
+  });
+  right.addEventListener("click", function () {
+    console.log("right 클릭");
+  });
   const swiper1 = new Swiper(".mySwiper1", {
     spaceBetween: 30,
     loop: true,
@@ -148,6 +157,9 @@ $(document).ready(function () {
     },
     slidesPerView: 1,
     breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
       1440: {
         slidesPerView: 3,
       },
