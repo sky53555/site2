@@ -139,32 +139,18 @@ $(document).ready(function () {
   //////////////////////////////
   //top추천여행
   //////////////////////////////
+  // 초기 로드 시 카테고리 로드
+  loadContent("domestic");
+  $(".tab-button").on("click", function () {
+    const category = $(this).data("tab");
+    $(".tab-button").removeClass("active");
+    $(this).addClass("active");
+    loadContent(category);
+  });
 
-  const left = document.querySelector(".left");
-  const right = document.querySelector(".right");
-  left.addEventListener("click", function () {
-    console.log("left 클릭");
-  });
-  right.addEventListener("click", function () {
-    console.log("right 클릭");
-  });
-  const swiper1 = new Swiper(".mySwiper1", {
-    spaceBetween: 30,
-    loop: true,
-    navigation: {
-      nextEl: ".right",
-      prevEl: ".left",
-    },
-    slidesPerView: 1,
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1440: {
-        slidesPerView: 3,
-      },
-    },
-  });
+  // 초기 로드 시 국내여행 카테고리 로드
+  // $(".tab-button[data-tab='domestic']").trigger("click");
+  let swiper1;
 
   function loadContent(category) {
     $.getJSON("./json/data.json", function (data) {
@@ -190,7 +176,27 @@ $(document).ready(function () {
         swiperWrapper.append(slideHtml);
       });
 
-      swiper1.update();
+      if (swiper1) {
+        swiper1.update();
+      } else {
+        swiper1 = new Swiper(".mySwiper1", {
+          spaceBetween: 30,
+          loop: true,
+          navigation: {
+            nextEl: ".right",
+            prevEl: ".left",
+          },
+          slidesPerView: 1,
+          breakpoints: {
+            768: {
+              slidesPerView: 2,
+            },
+            1440: {
+              slidesPerView: 3,
+            },
+          },
+        });
+      }
 
       $(".rcmLeft .rcmText h3").text(content.title);
       $(".rcmLeft .rcmText p").text(content.description);
@@ -204,15 +210,61 @@ $(document).ready(function () {
     });
   }
 
-  $(".tab-button").on("click", function () {
-    const category = $(this).data("tab");
-    $(".tab-button").removeClass("active");
-    $(this).addClass("active");
-    loadContent(category);
-  });
+  // const swiper1 = new Swiper(".mySwiper1", {
+  //   spaceBetween: 30,
+  //   loop: true,
+  //   navigation: {
+  //     nextEl: ".right",
+  //     prevEl: ".left",
+  //   },
+  //   slidesPerView: 1,
+  //   breakpoints: {
+  //     768: {
+  //       slidesPerView: 2,
+  //     },
+  //     1440: {
+  //       slidesPerView: 3,
+  //     },
+  //   },
+  // });
 
-  // 초기 로드 시 국내여행 카테고리 로드
-  $(".tab-button[data-tab='domestic']").trigger("click");
+  // function loadContent(category) {
+  //   $.getJSON("./json/data.json", function (data) {
+  //     const content = data[category];
+  //     const swiperWrapper = $(".mySwiper1 .swiper-wrapper");
+  //     swiperWrapper.empty();
+
+  //     content.slides.forEach(function (slide) {
+  //       const slideHtml = `
+  //         <div class="swiper-slide">
+  //           <div class="rcmBoxWrap">
+  //             <div class="rcmImg">
+  //               <img src="${slide.image}" alt="${slide.title}" />
+  //             </div>
+  //             <div class="rcmBoxTxt">
+  //               <h3>${slide.title}</h3>
+  //               <h4>${slide.description}</h4>
+  //               <h2>${slide.price}</h2>
+  //             </div>
+  //           </div>
+  //         </div>
+  //       `;
+  //       swiperWrapper.append(slideHtml);
+  //     });
+
+  //     swiper1.update();
+
+  //     $(".rcmLeft .rcmText h3").text(content.title);
+  //     $(".rcmLeft .rcmText p").text(content.description);
+  //     const $rcmImgs = $(".rcmLeft .rcmImgs");
+  //     $rcmImgs.empty();
+  //     content.images.forEach(function (image, index) {
+  //       $rcmImgs.append(
+  //         `<img src="${image}" alt="" class="${category}-img${index + 1}" />`
+  //       );
+  //     });
+  //   });
+  // }
 
   ////////////////////////
   //여행모음집
