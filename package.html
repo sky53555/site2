@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/sub.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" sizes="16x16" href="images/favicon.png" type="image/png">
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -351,57 +352,108 @@
       
           // 패키지 여행지 추천
           // Swiper 인스턴스 초기화
-          var swiper1 = new Swiper('.mySwiper1', {
-              spaceBetween: 30,
-              loop: true,
-              navigation: {
-                  nextEl: '.packageWrap .nextBtn',
-                  prevEl: '.packageWrap .prevBtn',
-              },
-              slidesPerView: 1,
-              breakpoints: {
-                  768: {
-                      slidesPerView: 2,
-                  },
-                  1200: {
-                      slidesPerView: 3,
-                  },
-                  1440: {
-                      slidesPerView: 4,
-                  },
-              },
-          });
-          window.mySwiper1 = swiper1; // 전역 변수로 Swiper 저장
+
+          let mySwiper1;
+
+function loadContent(category) {
+  $.getJSON("./json/package.json", function(data) {
+    const filteredContent = data.swiper1.filter(item => item.type === category);
+    const swiperWrapper = $(".mySwiper1 .swiper-wrapper");
+    swiperWrapper.empty();
+
+    filteredContent.forEach(function(item) {
+      const html = `
+      <li class="swiper-slide">
+        <div class="packImg">
+          <img src="${item.image}" alt="" class="img-cover" />
+        </div>
+        <div class="padding">
+          <h3>${item.title}</h3>
+          <p>${item.description}</p>
+          <h2>${item.price}~</h2>
+        </div>
+      </li>`;
+      swiperWrapper.append(html);
+    });
+
+    // Swiper 초기화 또는 업데이트
+    if (mySwiper1) {
+      mySwiper1.update();
+    } else {
+      mySwiper1 = new Swiper('.mySwiper1', {
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: '.packageWrap .nextBtn',
+          prevEl: '.packageWrap .prevBtn',
+        },
+        slidesPerView: 1,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
+          1440: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    }
+  });
+}
+      //     var swiper1 = new Swiper('.mySwiper1', {
+      //         spaceBetween: 30,
+      //         loop: true,
+      //         navigation: {
+      //             nextEl: '.packageWrap .nextBtn',
+      //             prevEl: '.packageWrap .prevBtn',
+      //         },
+      //         slidesPerView: 1,
+      //         breakpoints: {
+      //             768: {
+      //                 slidesPerView: 2,
+      //             },
+      //             1200: {
+      //                 slidesPerView: 3,
+      //             },
+      //             1440: {
+      //                 slidesPerView: 4,
+      //             },
+      //         },
+      //     });
+      //     window.mySwiper1 = swiper1; // 전역 변수로 Swiper 저장
  
       
-      function loadContent(category) {
-          $.getJSON("./json/package.json", function(data) {
-              const filteredContent = data.swiper1.filter(item => item.type === category);
-              const swiperWrapper = $(".mySwiper1 .swiper-wrapper");
-              swiperWrapper.empty();
+      // function loadContent(category) {
+      //     $.getJSON("./json/package.json", function(data) {
+      //         const filteredContent = data.swiper1.filter(item => item.type === category);
+      //         const swiperWrapper = $(".mySwiper1 .swiper-wrapper");
+      //         swiperWrapper.empty();
       
-              filteredContent.forEach(function(item) {
-                  const html = `
-                  <li class="swiper-slide">
-                      <div class="packImg">
-                          <img src="${item.image}" alt="" class="img-cover" />
-                      </div>
-                      <div class="padding">
-                          <h3>${item.title}</h3>
-                          <p>${item.description}</p>
-                          <h2>${item.price}~</h2>
-                      </div>
-                  </li>`;
-                  swiperWrapper.append(html);
-              });
+      //         filteredContent.forEach(function(item) {
+      //             const html = `
+      //             <li class="swiper-slide">
+      //                 <div class="packImg">
+      //                     <img src="${item.image}" alt="" class="img-cover" />
+      //                 </div>
+      //                 <div class="padding">
+      //                     <h3>${item.title}</h3>
+      //                     <p>${item.description}</p>
+      //                     <h2>${item.price}~</h2>
+      //                 </div>
+      //             </li>`;
+      //             swiperWrapper.append(html);
+      //         });
       
-              // Swiper 내용이 갱신되었으므로 Swiper를 업데이트
-              if (window.mySwiper1) {
-                  window.mySwiper1.update();
-              }
-          });
+      //         // Swiper 내용이 갱신되었으므로 Swiper를 업데이트
+      //         if (window.mySwiper1) {
+      //             window.mySwiper1.update();
+      //         }
+      //     });
 
-        }
+      //   }
         //특가할인
         $.getJSON("./json/package.json", function(data) {
           const content = data.swiper2;
